@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>박강산</title>
+  <link rel="shortcut icon" href="img/favicon_io/android-chrome-512x512.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<header id="id_wrap">
+  <button type="button" class="time_btn" onclick="setTimeLunch()">점심 시간</button>
+  <button type="button" class="time_btn" onclick="setTimeRest()">쉬는 시간</button>
+  <button type="button" class="time_btn" onclick="setTimeStudy()">수업 시간</button>
+  <button type="button" class="time_btn" onclick="setTimeReset()">리셋</button>
+</header>
+
+<body onload="startTime()">
+  <div id="wrap">
+    <div id="left_img"></div>
+    <div id="middle_txt"></div>
+    <div id="right_img"></div>
+  </div>
+</body>
+
+</html>

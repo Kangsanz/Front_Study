@@ -1,0 +1,68 @@
+@charset "UTF-8";
+input[type=text] {background-color: red;}
+.input-wrap input[name*=a] {
+  background-color: blue
+}
+
+.gnb {
+  background: #f1f1f1;
+}
+
+.gnb.yellow {
+  background: yellow;
+}
+
+.gnb.black {
+  background: black;
+}
+
+.gnb ul {
+  overflow: hidden;
+}
+
+.gnb ul li {
+  float: left;
+  height: 30px;
+}
+
+.gnb ul li a {
+  line-height: 30px;
+  padding: 0 10px;
+}
+
+.gnb[class~=topmenu] {
+  display: none;
+}
+
+.location div[class|=ko] {
+  color: blue;
+}
+
+.thumbnail ul {
+  width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.thumbnail ul li {
+  width: calc(25% - 20px);
+  margin: 0 10px;
+  float: left;
+}
+
+.thumbnail ul li a img {
+  width: 100%;
+}
+
+/* .thumbnail ul li:nth-child(2) {
+  opacity: 0.5;
+} */
+
+.thumbnail ul li a[href^=https] {
+  /* opacity: 0.5; */
+}
+
+.thumbnail ul li a img[src$=webp] {
+  border: 3px solid red;
+  box-sizing: border-box;
+}

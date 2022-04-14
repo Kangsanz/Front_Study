@@ -1,0 +1,60 @@
+@charset "UTF-8";
+html, body { height: 100%; }
+
+#graph {
+  width: 610px;
+  border: 3px solid black;
+}
+
+.bar {
+  width: 10px;
+  height: 50px;
+  background-color: orange;
+  margin: 5px;
+
+  transition-duration: 5s;
+}
+
+#graph:hover > .bar {
+  width: 600px;
+}
+
+#graph:hover .bar:nth-child(1) {
+  width: 100px;
+  background-color: lightcoral;
+
+  transition-delay: 0s;
+  transition-timing-function: linear;
+}
+
+#graph:hover .bar:nth-child(2) {
+  width: 300px;
+  background-color: tomato;
+
+  transition-delay: 0.5s;
+  transition-timing-function: ease;
+}
+
+#graph:hover .bar:nth-child(3) {
+  width: 400px;
+  background-color: moccasin;
+
+  transition-delay: 1s;
+  transition-timing-function: ease-in;
+}
+
+#graph:hover .bar:nth-child(4) {
+  width: 200px;
+  background-color: palegreen;
+
+  transition-delay: 1.5s;
+  transition-timing-function: ease-in-out;
+}
+
+#graph:hover .bar:nth-child(5) {
+  width: 450px;
+  background-color: paleturquoise;
+
+  transition-delay: 2s;
+  transition-timing-function: ease-out;
+}

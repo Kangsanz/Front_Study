@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.bouncingball {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  margin: 50px;
+  background: violet;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    top: 140px;
+    animation-timing-function: ease-out;
+  }
+  55% {
+    top: 160px;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    top: 120px;
+    height: 120px;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    top: 0;
+    height: 140px;
+    animation-timing-function: ease-in;
+  }
+}

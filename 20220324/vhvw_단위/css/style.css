@@ -1,0 +1,20 @@
+@charset "UTF-8";
+html. body { height: 100%; }
+.box {
+  height: 50vh;
+  width: 50vh;
+
+  /* width: 50vw; */
+  background: green;
+}
+
+.item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  height: 50vw;
+  width: 50vw;
+  background: lightpink;
+  /* display: none; */
+  }

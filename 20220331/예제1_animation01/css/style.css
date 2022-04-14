@@ -1,0 +1,98 @@
+@charset "UTF-8";
+.box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  left: 0;
+  border-radius: 50px;
+  box-sizing: border-box;
+  background: green;
+  color: white;
+  /* animation */
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+}
+
+.box:nth-child(2) {
+  top: 0;
+  animation-name: rotate1;
+  animation-direction: alternate;
+}
+
+.box:nth-child(3) {
+  top: 0;
+  animation-name: rotate2;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+
+.box h1 {
+  /* font-size: 14px; */
+}
+
+@keyframes rotate {
+  from {
+    /* 변화 코드 입력 영역 */
+    left: 0;
+    background: yellow;
+  }
+  50% {
+    /* 변화 코드 입력 영역 */
+    background: blue;
+    transform: rotate(180deg);
+    border-radius: 10%;
+  }
+  to {
+    /* 변화 코드 입력 영역 */
+    left: calc(100% - 100px);
+    background: purple;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate1 {
+  from {
+    /* 변화 코드 입력 영역 */
+    left: 0;
+    background: salmon;
+    border-radius: 30%;
+  }
+  50% {
+    /* 변화 코드 입력 영역 */
+    background: skyblue;
+    transform: rotate(180deg);
+  }
+  to {
+    /* 변화 코드 입력 영역 */
+    left: calc(100% - 100px);
+    top: calc(100% - 100px);
+    background: yellowgreen;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate2 {
+  from {
+    /* 변화 코드 입력 영역 */
+    background: navy;
+  }
+  50% {
+    /* 변화 코드 입력 영역 */
+    background: lightpink;
+    transform: rotate(180deg);
+  }
+  to {
+    /* 변화 코드 입력 영역 */
+    top: calc(100% - 100px);
+    background: brown;
+    transform: rotate(360deg);
+    border-radius: 0;
+  }
+}

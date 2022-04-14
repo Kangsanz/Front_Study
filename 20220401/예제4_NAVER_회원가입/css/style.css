@@ -1,0 +1,254 @@
+@charset "UTF-8";
+body {
+  background: #f5f6f7;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+h3 span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+#wrap {
+  width: 100%
+}
+
+#wrap .title {
+  position: relative;
+  min-width: 220px;
+  margin: 0 15px;
+  padding: 59px 0 20px;
+  box-sizing: border-box;
+}
+
+#wrap .title .logo {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#wrap .title .logo {
+  width: 165px;
+  height: 32px;
+  background-image: url('../img/naver_logo.png');
+  background-size: 165px auto;
+}
+
+#container {
+  width: auto;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+#content {
+  width: 460px;
+  margin: 0 auto;
+}
+
+.sign_group {
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.transparent {
+  background: #f7f7f7
+}
+
+input {
+  width: 100%;
+  height: 29px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: none;
+  font-size: 15px;
+}
+
+input.small {
+  height: 29px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  height: 29px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: none;
+  font-size: 15px;
+}
+
+select.small {
+  height: 29px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+#content .sign_group .btn_box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 51px;
+  margin: 10px 0;
+  padding: 10px 110px 10px 14px;
+  box-sizing: border-box;
+  border: solid 1px #dadada;
+  background: white;
+  font-size: 15px;
+}
+
+#content .sign_group .btn_box.transparent {
+  background: #f7f7f7;
+}
+
+#content .sign_group .btn_box.middle {
+  padding: 10px 40px 10px 14px;
+}
+
+#content .sign_group .btn_box.small {
+  padding: 11px 14px;
+}
+
+#content .sign_group .bd_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#content .sign_group .btn_box.small:nth-of-type(2) {
+  margin: 0 10px;
+}
+
+#content .sign_group:nth-of-type(1) .btn_box span {
+  position: absolute;
+  top: 16px;
+  right: 13px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #8e8e8e;
+}
+
+#content .sign_group:nth-of-type(1) .btn_box:nth-of-type(2) span {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  width: 24px;
+  height: 24px;
+  margin-top: -12px;
+  background-image: url('../img/naver_icon.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 125px 75px;
+}
+
+#content .sign_group:nth-of-type(1) .btn_box:nth-of-type(3) span {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  width: 24px;
+  height: 24px;
+  margin-top: -12px;
+  background-image: url('../img/naver_icon.png');
+  background-repeat: no-repeat;
+  background-position: -27px 0;
+  background-size: 125px 75px;
+}
+
+
+#content .sign_group .pn_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#content .sign_group .pn_wrap .phone_number {
+}
+
+#content .sign_group .pn_wrap .pn_btn {
+  width: 160px;
+  height: 51px;
+  margin: 0 0 0 10px;
+  color: #fff;
+  border: solid 1px rgba(0,0,0,.08);
+  background-color: #03c75a;
+}
+
+#content .sign_btn {
+  width: 100%;
+  color: #fff;
+  border: solid 1px rgba(0,0,0,.08);
+  background-color: #03c75a;
+  margin-top: 30px;
+  padding: 15px 0 15px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#footer {
+  max-width: 768px;
+  min-width: 460px;
+  margin: 0 auto;
+  padding: 30px 0 15px 0;
+  text-align: center;
+  overflow: hidden;
+
+  font-size: 12px;
+  color: #7e7e7e;
+}
+
+
+#footer .f-box {
+  width: 460px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#footer .f-box ul {
+  overflow: hidden;
+  margin: 0 0 9px 0;
+}
+
+#footer .f-box ul li {
+  position: relative;
+  display: inline;
+  height: 20px;
+  padding: 0 3px 0 7px;
+}
+
+#footer .f-box ul li:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 12px;
+  background: #dadada;
+
+  left: 0;
+  top: 2.5px;
+  bottom: calc(50% - 7.5px);
+}
+
+#footer .f-box ul li:first-child:before {
+  display: none;
+}
+
+#footer .f-box ul li:first-child {
+  margin-left: 0;
+}
+
+#footer .f-box ul li a {
+  line-height: 20px;
+  color: #7e7e7e;
+}

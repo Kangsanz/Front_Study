@@ -1,0 +1,408 @@
+@charset "UTF-8";
+
+:root {
+  --content-width: 1408px;
+}
+
+/* 공통 UI */
+a.common-btn {
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+  font-size: 20px;
+  color: white;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 5px;
+  background: #0055b8;
+}
+
+/* 상단 메뉴 */
+#header {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: white;
+}
+
+#header #logo {
+  float: left;
+}
+
+#header .h-inner {
+  width: var(--content-width);
+  margin: 0 auto;
+  padding: 45px 25px 65px;
+}
+
+#header .inner {
+  float: left;
+}
+
+#header .inner #gnb {
+  margin-left: 110px;
+  margin-right: 350px;
+  height: 26px;
+  line-height: 26px;
+}
+
+#header .inner #gnb li {
+  margin-right: 47px;
+}
+
+#header .inner #login-menu li {
+  width: 78px;
+  height: 26px;
+  line-height: 28px;
+  font-size: 14px;
+  text-align: center;
+  margin-right: 30px;
+  border: 1px solid #cdd1d5;
+  border-radius: 15px;
+}
+
+#header .inner>ul {
+  overflow: hidden;
+  float: left;
+}
+
+#header .inner>ul>li {
+  float: left;
+}
+
+/* 공통 영역 */
+#wrap {
+  width: var(--content-width);
+  margin: 0 auto;
+  background: #f1f1f1;
+}
+
+#container section .inner {
+  width: var(--content-width);
+  min-height: 650px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#container section .inner h2 {
+  font-size: 45px;
+  line-height: 1;
+  color: #333;
+}
+
+#container section .inner .subtitle {
+  margin-top: 21px;
+  font-size: 15px;
+  line-height: 36px;
+  color: #666;
+}
+
+#container section .inner .box {
+  float: left;
+  width: 50%;
+  min-height: 800px;
+}
+
+#container section .inner .box.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#container section .inner .box .text-box {
+  display: inline-block;
+  text-align: left;
+  margin-top: 150px;
+}
+
+#container section .inner .box .text-box h2 {
+  line-height: 60px;
+}
+
+
+/* 첫번째 영역 */
+#container section:nth-child(1) {
+  background-color: #7f99e2;
+}
+
+#container section:nth-child(1) .inner h2, #container section:nth-child(1) .inner .subtitle {
+  color: white;
+}
+
+#container section:nth-child(1) .inner .box {
+  float: left;
+  width: 40%;
+  min-height: 800px;
+}
+
+#container section:nth-child(1) .inner .box.img {
+  background-image: url('../img/nateon/nateon-talk.png');
+  background-position: center center;
+  background-size: 832px 738px;
+  width: 60%;
+}
+
+#container section:nth-child(1) .inner .box .text-box a.common-btn {
+  background: none;
+  margin: 43px 13px 0 0;
+}
+
+#container section:nth-child(1) .inner .box .text-box a.common-btn:nth-of-type(3) {
+  margin-top: 13px;
+}
+
+#container section:nth-child(1) .inner .box .text-box a.common-btn:nth-of-type(4) {
+  margin-top: 13px;
+}
+
+/* 두번째 영역 */
+#container section:nth-child(2) .inner .box {
+  float: left;
+  width: 60%;
+  min-height: 800px;
+}
+
+#container section:nth-child(2) .inner .box.img {
+  background-image: url('../img/nateon/nateon-talk2.png');
+  background-position: center center;
+  background-size: 508px 642px;
+  width: 40%;
+  /* margin-top: 150px; */
+}
+
+#container section:nth-child(2) .inner .box .text-box {
+  margin-top: 232px;
+}
+
+/* 세번째 영역 */
+#container section:nth-child(3) {
+  background-color: #f2f4f9;
+}
+
+#container section:nth-child(3) .inner .box {
+  float: left;
+  width: 60%;
+  min-height: 800px;
+}
+
+#container section:nth-child(3) .inner .box.img {
+  float: right;
+  background-image: url('../img/nateon/nateon-function.png');
+  background-position: center center;
+  background-size: 254px 800px;
+  width: 40%;
+}
+
+#container section:nth-child(3) .inner .box .text-box {
+  margin-top: 240px;
+}
+
+/* 네번째 영역 */
+#container section:nth-child(4) {
+  background-color: #56689a;
+}
+
+#container section:nth-child(4) .inner .box {
+  float: left;
+  width: 100%;
+  min-height: 800px;
+}
+
+#container section:nth-child(4) .inner .box .text-box {
+  text-align: justify;
+  width: 100%;
+  padding-left: 100px;
+}
+
+#container section:nth-child(4) .inner .box .text-box h2 {
+  font-weight: inherit;
+}
+
+#container section .inner .thumb-img-wrap ul {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+#container section .inner .thumb-img-wrap ul li {
+  display: inline-block;
+  float: left;
+  width: 33.333%;
+}
+
+#container section .inner .thumb-img-wrap ul li a img {
+  width: 130px;
+  height: 130px;
+}
+
+ #container section:nth-child(4) .inner h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+#container section:nth-child(4) .inner h2 {
+  color: white;
+}
+
+#container section:nth-child(4) .inner .subtitle {
+  color: #cbcdd1;
+}
+
+/* 다섯번째 영역 */
+#container section:nth-child(5) {
+  background-color: #f2f4f9;
+}
+
+#container section:nth-child(5) .inner .box {
+  float: left;
+  width: 60%;
+  min-height: 800px;
+}
+
+#container section:nth-child(5) .inner .box.img {
+  float: right;
+  background-image: url('../img/nateon/nateon-shopping.png');
+  background-position: center center;
+  background-size: 272px 610px;
+  width: 40%;
+}
+
+#container section:nth-child(5) .inner .box .text-box {
+  margin-top: 200px;
+}
+
+#container section:nth-child(5) .inner .box .text-box h2 {
+  margin-bottom: 50px;
+}
+
+#container section:nth-child(5) .inner .box .text-box h3 {
+margin-top: 30px;
+ font-size: 20px;
+ font-weight: bold;
+}
+
+#container section:nth-child(5) .inner .box .text-box a img {
+  width: 57px;
+  height: 57px;
+}
+
+/* 여섯번째 영역 */
+#container section:nth-child(6) {
+  background-color: #8691a2;
+}
+
+#container section:nth-child(6) .inner h2 {
+  color: white;
+  padding-top: 10px;
+}
+
+#container section:nth-child(6) .inner .subtitle {
+  font-weight: 300;
+  color: white;
+  margin-top: 35px;
+}
+
+#container section:nth-child(6) .inner .subtitle:nth-of-type(2) {
+  margin-top: 0;
+}
+
+#container section:nth-child(6) .inner .box {
+  float: left;
+  width: 100%;
+  min-height: 800px;
+}
+
+#container section:nth-child(6) .inner .box .text-box {
+  text-align: justify;
+  width: 100%;
+  padding-left: 100px;
+}
+
+#container section:nth-child(6) .inner .box .text-box h2 {
+  font-weight: inherit;
+}
+
+#container section:nth-child(6) .inner .thumb-img-wrap ul {
+  margin-top: 100px;
+}
+
+#container section:nth-child(6) .inner .thumb-img-wrap ul li h3 {
+  width: 238px;
+  font-weight: 500;
+  color: white;
+  padding-bottom: 22px;
+  border-bottom: 6px solid #fff;
+}
+
+#container section:nth-child(6) .inner .thumb-img-wrap ul li .subtitle {
+  width: 238px;
+  background: url('../img/nateon/nateon-download.png') 100% no-repeat;
+  background-size: 13px 15px;
+}
+
+#container section:nth-child(6) .inner .thumb-img-wrap ul li:nth-of-type(3) .subtitle {
+  background: none;
+}
+
+/* 하단영역 */
+#footer {
+  width: var(--content-width);
+  background: white;
+  margin: 0 auto;
+}
+
+#footer .inner {
+  width: var(--content-width);
+  height: 86px;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 40px 0 0 100px;
+}
+
+#footer .inner .f-box {
+  float: left;
+}
+
+#footer .inner .f-box ul {
+  overflow: hidden;
+}
+
+#footer .inner .f-box ul li {
+  position: relative;
+  float: left;
+  height: 20px;
+  margin-left: 40px;
+}
+
+#footer .inner .f-box ul li:before {
+  content: '';
+  position: absolute;
+  /* display: inline-block; */
+  width: 2px;
+  height: 15px;
+  background: #333;
+  opacity: 0.5;
+
+  left: -21px;
+  bottom: calc(50% - 7.5px);
+}
+
+#footer .inner .f-box ul li:first-child:before {
+  display: none;
+}
+
+#footer .inner .f-box ul li:first-child {
+  margin-left: 0;
+}
+
+#footer .inner .f-box ul li a {
+  line-height: 20px;
+  color: #333;
+}

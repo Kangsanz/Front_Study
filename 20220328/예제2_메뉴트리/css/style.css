@@ -1,0 +1,90 @@
+@charset "UTF-8";
+.menu-tree-management {
+  border: 1px solid #f1f1f1;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 30px;
+  background: #f9f9f9;
+}
+
+.menu-tree-management .title {
+  font-size: 16px;
+  font-weight: bold;
+  height: 18px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.menu-tree-management input[type=checkbox] {
+  display: none;
+}
+
+.menu-tree-management input[type=checkbox] + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+  font-size: 19px;
+  color: #333;
+  height: 19px;
+  line-height: 19px;
+}
+
+.menu-tree-management input[type=checkbox] + label:before {
+  content: '';
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 0;
+  left: 0;
+  background-image: url('../img/menu_tree_icon_plus.png');
+}
+
+/* .menu-tree-management input[type=checkbox]:checked + label:before {
+background-image: url('../img/menu_tree_icon_minus.png')
+} */
+
+.menu-tree-management input[type=checkbox]:checked + label:after {
+  content: '';
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 0;
+  left: 0;
+  background-image: url('../img/menu_tree_icon_minus.png');
+}
+
+.menu-tree-management input[type=checkbox] + label ~ .submenu {
+  display: none;
+}
+
+.menu-tree-management input[type=checkbox]:checked + label {
+  color: #1a73c4;
+}
+
+.menu-tree-management input[type=checkbox]:checked + label ~ .submenu {
+  display: block;
+}
+
+.menu-tree-management .table-ctn .menu-tree > ul > li {
+  margin-bottom: 30px;
+}
+
+.menu-tree-management .table-ctn .menu-tree .submenu {
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+.menu-tree-management .table-ctn .menu-tree .submenu > li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: #666;
+}
+
+.menu-tree-management .table-ctn .menu-tree .submenu > li:before {
+  position: absolute;
+  content: 'L';
+  top: 0;
+  left: 0;
+}

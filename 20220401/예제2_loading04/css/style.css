@@ -1,0 +1,240 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+body {
+  background: black;
+}
+
+@keyframes loading {
+  form {
+    color: white;;
+  }
+
+  25% {
+    transform: translateY(-25%);
+  }
+
+  50% {
+    transform: translateY(25%);
+  }
+
+  to {
+    color: black;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes spinner1 {
+  form {
+    border: 3px solid rgba(255, 0, 0, 1)
+  }
+
+  50% {
+    border: 3px solid rgba(255, 0, 0, 0.5);
+  }
+
+  to {
+    transform: scale(500%);
+    border: 3px solid black;
+  }
+}
+
+@keyframes spinner2 {
+  form {
+    border: 3px solid rgba(255, 128, 0, 1);
+  }
+
+  50% {
+    border: 3px solid rgba(255, 128, 0, 0.5);
+  }
+
+  to {
+    transform: scale(500%);
+    border: 3px solid black;
+  }
+}
+
+@keyframes spinner3 {
+  form {
+    border: 3px solid rgb(255, 255, 0);
+  }
+
+  50% {
+    border: 3px solid rgba(255, 255, 0, 0.5);
+  }
+
+  to {
+    transform: scale(500%);
+    border: 3px solid black;
+  }
+}
+
+@keyframes spinner4 {
+  form {
+    border: 3px solid rgba(0, 255, 0, 1)
+  }
+
+  50% {
+    border: 3px solid rgba(0, 255, 0, 0.5);
+  }
+
+  to {
+    transform: scale(500%);
+    border: 3px solid black;
+  }
+}
+
+@keyframes spinner5 {
+  form {
+    border: 3px solid rgba(0, 0, 255, 1)
+  }
+
+  50% {
+    border: 3px solid rgba(0, 0, 255, 0.5);
+  }
+
+  to {
+    transform: scale(500%);
+    border: 3px solid black;
+  }
+}
+
+@keyframes spinner6 {
+  form {
+    border: 3px solid rgba(128, 0, 255, 1)
+  }
+
+  50% {
+    border: 3px solid rgba(128, 0, 255, 0.5);
+  }
+
+  to {
+    transform: scale(500%);
+    border: 3px solid black;
+  }
+}
+
+@keyframes spinner7 {
+  form {
+    border: 3px solid rgba(250, 217, 230, 1);
+  }
+
+  50% {
+    border: 3px solid rgba(250, 217, 230, 0.5);
+  }
+
+  to {
+    transform: scale(500%);
+    border: 3px solid black;
+  }
+}
+
+#wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#spinner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 16px; */
+  width: 150px;
+  height: 150px;
+}
+
+#spinner p {
+  font-size: 30px;
+  font-family: 'Rubik Glitch', cursive;
+  padding-bottom: 3px;
+
+  animation-name: loading;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  text-shadow: 1px 1px 1px white;
+}
+
+#spinner p:nth-of-type(1) {
+  color: red;
+}
+
+#spinner p:nth-of-type(2) {
+  color: orange;
+}
+
+#spinner p:nth-of-type(3) {
+  color: yellow;
+}
+
+#spinner p:nth-of-type(4) {
+  color: green;
+}
+
+#spinner p:nth-of-type(5) {
+  color: blue;
+}
+
+#spinner p:nth-of-type(6) {
+  color: purple;
+}
+
+#spinner p:nth-of-type(7) {
+  color: pink;
+}
+
+#spinner div {
+  position: absolute;
+  /* top: 0; */
+  width: 100%;
+  height: 100%;
+  border: 3px solid red;
+  border-radius: 100%;
+
+  animation-name: spinner1;
+  animation-duration: 7s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+#spinner div:nth-of-type(2) {
+  animation-delay: 1s;
+  border: 3px solid orange;
+  animation-name: spinner2;
+}
+
+#spinner div:nth-of-type(3) {
+  animation-delay: 2s;
+  border: 3px solid yellow;
+  animation-name: spinner3;
+}
+
+#spinner div:nth-of-type(4) {
+  animation-delay: 3s;
+  border: 3px solid green;
+  animation-name: spinner4;
+}
+
+#spinner div:nth-of-type(5) {
+  animation-delay: 4s;
+  border: 3px solid blue;
+  animation-name: spinner5;
+}
+
+#spinner div:nth-of-type(6) {
+  animation-delay: 5s;
+  border: 3px solid purple;
+  animation-name: spinner6;
+}
+
+#spinner div:nth-of-type(7) {
+  animation-delay: 6s;
+  border: 3px solid pink;
+  animation-name: spinner7;
+}

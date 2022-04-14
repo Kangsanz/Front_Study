@@ -1,0 +1,92 @@
+@charset "UTF-8";
+h1:first-letter {
+  font-size: 100px;
+}
+
+p::first-line {
+  color: red;
+  font-size: 21px;
+}
+
+#gnb {
+  overflow: hidden;
+  padding: 0 30px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+#gnb .pseudo {
+  float: right;
+  overflow: hidden;
+  /* background: pink; */
+}
+
+#gnb .pseudo li {
+  position: relative;
+  float: left;
+  height: 60px;
+  margin-right: 20px;
+}
+
+#gnb .pseudo li:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 2px;
+    height: 16px;
+    background: #f1f1f1;
+    top: calc(50% - 8px);
+    left: -11px;
+}
+
+/* #gnb .pseudo li {
+  padding-left: 20px;
+  position: relative;
+  float: left;
+  height: 60px;
+} */
+
+/* #gnb .pseudo li:before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 2px;
+  height: 16px;
+  background: red;
+  top: calc(50% - 8px);
+  left: 9px;
+} */
+
+#gnb .pseudo li:nth-child(4) {
+  margin-right: 0;
+}
+
+#gnb .pseudo li:nth-child(1):before {
+  display: none;
+}
+
+#gnb .pseudo li a {
+  line-height: 60px;
+}
+
+#sitemap {
+  overflow: hidden;
+}
+
+#sitemap li {
+  float: left;
+  height: 30px;
+  margin-left: 20px;
+}
+#sitemap li:first-child {
+  margin-left: 0;
+}
+
+#sitemap li a {
+  line-height: 30px;
+}
+
+#sitemap li a:after {
+  content: attr(title);
+  width: 2px;
+  background: red;
+}

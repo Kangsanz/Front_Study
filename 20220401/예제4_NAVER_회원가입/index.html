@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/naver-favicon.ico">
+  <script type="text/javascript" src="js/prefix.js"></script>
+  <title>NAVER 회원가입</title>
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="title">
+      <div class="logo"></div>
+    </div>
+    <form>
+      <div id="container">
+        <div id="content">
+          <div class="sign_group">
+            <h3>아이디</h3>
+            <div class="btn_box">
+              <input type="text" name="ID">
+              <span>@naver.com</span>
+            </div>
+            <h3>비밀번호</h3>
+            <div class="btn_box middle">
+              <input type="password" name="password">
+              <span></span>
+            </div>
+            <h3>비밀번호 재확인</h3>
+            <div class="btn_box middle">
+              <input type="password" name="password2">
+              <span></span>
+            </div>
+          </div>
+
+          <div class="sign_group">
+            <h3>이름</h3>
+            <div class="btn_box middle">
+              <input type="text" name="name">
+            </div>
+            <h3>생년월일</h3>
+            <div class="bd_wrap">
+              <div class="btn_box small">
+                <input class="small" type="text" name="year" placeholder="년(4자)">
+              </div>
+              <div class="btn_box small">
+                <select class="month small" name="month">
+                  <option value="월" selected>월</option>
+                  <option value="1월">1월</option>
+                  <option value="1월">1월</option>
+                  <option value="2월">2월</option>
+                  <option value="3월">3월</option>
+                  <option value="4월">4월</option>
+                  <option value="5월">5월</option>
+                  <option value="6월">6월</option>
+                  <option value="7월">7월</option>
+                  <option value="8월">8월</option>
+                  <option value="9월">9월</option>
+                  <option value="10월">10월</option>
+                  <option value="11월">11월</option>
+                  <option value="12월">12월</option>
+                </select>
+              </div>
+              <div class="btn_box small">
+                <input class="small" type="text" name="day" placeholder="일">
+              </div>
+            </div>
+            <h3>성별</h3>
+            <div class="btn_box small">
+              <select class="gender" name="gender">
+                <option value="성별" selected>성별</option>
+                <option value="남자">남자</option>
+                <option value="여자">여자</option>
+                <option value="선택 안함">선택 안함</option>
+              </select>
+            </div>
+            <h3>본인 확인 이메일<span>(선택)</span></h3>
+            <div class="btn_box small">
+              <input type="email" name="email" placeholder="선택입력">
+            </div>
+          </div>
+
+          <div class="sign_group">
+            <h3>휴대전화</h3>
+            <div class="btn_box small">
+              <select class="number" name="number">
+                <option value="대한민국 +82" selected>대한민국 +82</option>
+                <option value="일본 +81">일본 + 81</option>
+                <option value="미국/캐나다 +1">미국/캐나다 +1</option>
+                <option value="홍콩 +852">홍콩 +852</option>
+              </select>
+            </div>
+            <div class="pn_wrap">
+              <div class="btn_box small">
+                <input class="phone_number" type="text" name="phone_number" placeholder="전화번호 입력">
+              </div>
+              <button class="pn_btn">인증번호 받기</button>
+            </div>
+            <div class="btn_box small transparent">
+              <input class="transparent" type="text" name="sign_number" placeholder="인증번호 입력하세요">
+            </div>
+          </div>
+          <button class="sign_btn">가입하기</button>
+        </div>
+      </div>
+    </form>
+
+    <footer id="footer">
+      <div class="f-box">
+        <ul>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+          <li><a href="#">책임의 한계와 법적고지</a></li>
+          <li><a href="#">회원정보 고객센터</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        © NAVER Corp.
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

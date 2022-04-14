@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* @import "./initial.css"; */
+body {
+  background-color: purple;
+  color:black;
+}
+
+body {
+  background-color: blue;
+  color:white;
+}
+
+body {
+  background-color: green;
+}
+
+body {
+  color: yellow
+}

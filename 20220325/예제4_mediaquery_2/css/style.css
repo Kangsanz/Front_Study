@@ -1,0 +1,44 @@
+@charset "UTF-8";
+html, body { height: 100%; }
+body { background: black; }
+
+#wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#wrap::before {
+  content: '';
+  font-size: 2em;
+  color: white;
+}
+
+@media screen and ( max-width:1200px ) {
+  body { background-color: darkred; }
+  #wrap:before {
+    content: 'middle size PC';
+  }
+}
+
+@media screen and ( max-width:1024px ) {
+  body { background-color: darkblue; }
+  #wrap:before {
+    content: 'Desktop(CRT)';
+  }
+}
+
+@media screen and ( max-width:768px ) {
+  body { background-color: darkgreen; }
+  #wrap:before {
+    content: 'Pad(ipad-mini)';
+  }
+}
+
+@media screen and ( max-width:380px ) {
+  body { background-color: gold; }
+  #wrap:before {
+    content: 'Mobile(Galaxy)';
+  }
+}

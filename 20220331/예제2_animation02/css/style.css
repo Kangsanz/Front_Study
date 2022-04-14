@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: red;
+  top: 0;
+  left: 0;
+  animation-name: bgcolorchange;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate; */
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bgcolorchange {
+  from {
+    background: red;
+  }
+
+  15% {
+    top: 150px;
+    left: 400px;
+  }
+
+  32% {
+    top: 600px;
+    left: 200px;
+  }
+
+  49% {
+    top: 280px;
+    left: 600px;
+  }
+
+  66% {
+    top: 280px;
+    left: 200px;
+  }
+
+  83% {
+    top: 600px;
+    left: 600px;
+  }
+
+  to {
+    background: yellow;
+    top: 150px;
+    left: 400px;
+}

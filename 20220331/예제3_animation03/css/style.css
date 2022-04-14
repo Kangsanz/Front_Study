@@ -1,0 +1,21 @@
+@charset "UTF-8";
+div {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: red;
+  animation-name: fillmodecheck;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fillmodecheck {
+  from {
+    top: 0px; background: yellow;
+  }
+
+  to {
+    top: 300px; background: blueviolet;
+  }
+}
