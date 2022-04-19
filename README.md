@@ -1,3 +1,2 @@
-Hello World!
-
-Kangsan's StudyFolder
+# testreposit
+this is initial commit file.
