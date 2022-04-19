@@ -1,5 +1,3 @@
 Hello World!
 
-add
-asdf
-
+Kangsan's StudyFolder
