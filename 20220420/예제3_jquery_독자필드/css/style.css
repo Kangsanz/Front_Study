@@ -10,3 +10,9 @@ ul,ol { list-style: none; }
 ul li:nth-child(even) {
   color: blue;
 } */
+
+li {
+  min-height: 20px;
+  line-height: 20px;
+  border: 1px solid blue;
+}
