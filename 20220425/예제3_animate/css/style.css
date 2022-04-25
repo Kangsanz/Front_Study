@@ -1,0 +1,21 @@
+@charset "UTF-8";
+html, body {
+  height: 100%;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: #c8392b;
+}
+
+.box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: orange;
+  /* top: 100px;
+  left: 100px; */
+}
