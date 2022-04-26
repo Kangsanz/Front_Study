@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* 상단 메뉴 */
+#wrap {
+  width: 100%;
+  height: 20%;
+  margin: 0 auto;
+  background: salmon;
+}
+
+#wrap #header {
+  position: relative;
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#wrap #header a {
+  display: inline-block;
+}
+
+#wrap #header #logo {
+  float: left;
+  padding: 20px;
+  margin-right: 20px;
+  z-index: 10;
+}
+
+#wrap #header .inner {
+  float: left;
+  z-index: 10;
+}
+
+#wrap #header .inner #gnb {
+  position: absolute;
+  float: left;
+  left: 50%;
+}
+
+#wrap #header .inner #gnb li {
+  display: inline-block;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+#wrap #header #main_banner {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* 하단영역 */
+#footer {
+  width: var(--content-width);
+  background: white;
+  margin: 0 auto;
+}
+
+#footer .inner {
+  width: var(--content-width);
+  height: 86px;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 40px 0 0 100px;
+}
+
+#footer .inner .f-box {
+  float: left;
+}
+
+#footer .inner .f-box ul {
+  overflow: hidden;
+}
+
+#footer .inner .f-box ul li {
+  position: relative;
+  float: left;
+  height: 20px;
+  margin-left: 40px;
+}
+
+#footer .inner .f-box ul li:before {
+  content: '';
+  position: absolute;
+  /* display: inline-block; */
+  width: 2px;
+  height: 15px;
+  background: #333;
+  opacity: 0.5;
+
+  left: -21px;
+  bottom: calc(50% - 7.5px);
+}
+
+#footer .inner .f-box ul li:first-child:before {
+  display: none;
+}
+
+#footer .inner .f-box ul li:first-child {
+  margin-left: 0;
+}
+
+#footer .inner .f-box ul li a {
+  line-height: 20px;
+  color: #333;
+}
