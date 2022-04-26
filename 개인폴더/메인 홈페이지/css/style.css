@@ -22,14 +22,15 @@ a {
 }
 
 #main_wrap a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
   width: 100px;
   height: 100px;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   background-color: gray;
-  text-align: center;
-}
-
-#main_wrap a:first-child {
   margin-right: 15px;
 }
