@@ -7,7 +7,9 @@ $(function() {
       step: function(now) {
         $(this).text(Math.ceil(now));
       }
-      // boxNum = boxNum.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     });
+    $(this).change(function() {
+      console.log(boxNum);
+    })
   });
 });

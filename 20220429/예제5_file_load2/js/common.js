@@ -1,6 +1,6 @@
 $(function() {
 // script 영역 file load 예
-  // $('#content').load('./load_file.html .section1');
+  $('#content').load('./load_file.html .section1');
   // $('ul li').click(function() {
   //   console.log($(this).index());
   //   console.log($(this).attr('id'));
@@ -19,8 +19,17 @@ $(function() {
   위 코드를 리팩토링하여 코드를 재작성하시오.
   */
 
+  // $('ul li').click(function() {
+  //   let thisIndex = $(this).attr('id');
+  //   $('#content').load(`./load_file.html .${thisIndex}`)
+  // });
+
+  // 정답
   $('ul li').click(function() {
+    let thisIndex = $(this).index() + 1;
     let thisId = $(this).attr('id');
-    $('#content').load(`./load_file.html .${thisId}`)
+    if(thisId == `section${thisIndex}`){
+      $('#content').load(`./load_file.html .section${thisIndex}`)
+    }
   });
 });
