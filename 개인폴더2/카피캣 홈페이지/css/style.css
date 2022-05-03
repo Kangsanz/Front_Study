@@ -306,6 +306,10 @@
   background: #ffe537;
 }
 
+#third #wrap_circle .circle:nth-of-type(7) strong {
+  color: #fff;
+}
+
 #third #wrap_circle .circle strong {
   font-size: 26px;
   color: #a3a3a3;

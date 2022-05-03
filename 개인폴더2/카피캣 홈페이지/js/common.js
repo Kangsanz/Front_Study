@@ -20,7 +20,8 @@ $(function() {
 
   // 원 영역
   function animFunc(name) {
-    let innerElem = $('#carousel-inner');
+    let widthNum =
+    let innerElem = $('#wrap_circle');
     let caInMarginLeft = parseInt(innerElem.css('margin-left'));
 
     $(name).click(function() {
