@@ -22,7 +22,7 @@
   z-index: 10;
 }
 
-#wrap > a {
+#wrap>a {
   width: auto;
   height: 500px;
 }
@@ -273,21 +273,48 @@
 
 /* 세번째 영역 */
 #third .inner {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
-
   margin-top: 50px;
   padding: 51px 0;
   overflow: hidden;
   background: #f4f4f4;
 }
 
+#third .inner::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
+  margin-top: -1px;
+}
+
+#third .arrow_btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 11;
+}
+
+#third #carousel_prev {
+  left: 18.5%;
+}
+
+#third #carousel_next {
+  right: 18.5%;
+}
+
 #third #wrap_circle {
   display: flex;
   flex-direction: row;
-  float: left;
 }
 
 #third #wrap_circle .circle {
@@ -300,6 +327,12 @@
   border-radius: 100%;
   background: #fff;
   margin: 0 35px;
+  z-index: 10;
+  transition: .5s;
+}
+
+#third #wrap_circle .circle:first-child {
+  /* margin-left: -195px; */
 }
 
 #third #wrap_circle .circle:nth-of-type(7) {
@@ -310,10 +343,25 @@
   color: #fff;
 }
 
+#third #wrap_circle .circle .heart_icon {
+  width: 29px;
+  height: 26px;
+  background-image: url('../img/heart_icon.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  /* background-size: cover; */
+  z-index: 10;
+}
+
+#third #wrap_circle .circle:nth-of-type(7) .heart_icon {
+  background-position: bottom center;
+}
+
 #third #wrap_circle .circle strong {
   font-size: 26px;
   color: #a3a3a3;
 }
+
 
 #third #wrap_circle .circle span {
   margin-top: 15px;

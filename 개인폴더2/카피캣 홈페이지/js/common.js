@@ -19,33 +19,35 @@ $(function() {
   });
 
   // 원 영역
+  const widthNum = 230;
+
   function animFunc(name) {
-    let widthNum =
     let innerElem = $('#wrap_circle');
     let caInMarginLeft = parseInt(innerElem.css('margin-left'));
+    innerElem.css('margin-left', -widthNum);
 
     $(name).click(function() {
       let isAni = innerElem.is(':animated');
-      if (name == '#carousel-prev' && !isAni) {
+      if (name == '#carousel_prev' && !isAni) {
         innerElem.animate({
           marginLeft: caInMarginLeft + widthNum
-        }, 'slow', 'swing', function() {
-          $('#carousel-inner ul.column:last').prependTo('#carousel-inner');
+        }, '1200', 'swing', function() {
+          $('#wrap_circle .circle:last').prependTo(innerElem);
           innerElem.css('margin-left', -widthNum);
         });
-      } else if (name == '#carousel-next' && !isAni) {
+      } else if (name == '#carousel_next' && !isAni) {
         innerElem.animate({
-          marginLeft: caInMarginLeft - widthNum
-        }, 'slow', 'swing', function() {
-          $('#carousel-inner ul.column:first').appendTo('#carousel-inner');
+          marginLeft: caInMarginLeft - widthNum*2
+        }, '1200', 'swing', function() {
+          $('#wrap_circle .circle:first').appendTo(innerElem);
           innerElem.css('margin-left', -widthNum);
         });
       };
     });
   };
 
-  animFunc('#carousel-prev');
-  animFunc('#carousel-next');
+  animFunc('#carousel_prev');
+  animFunc('#carousel_next');
 
   // 리스트 영역
   $('.list_click').click(function() {
