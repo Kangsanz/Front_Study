@@ -1,8 +1,30 @@
 $(function() {
-  $(function() {
-    $('#header_wrap').load('./header.html #header');
-    $('#footer_wrap').load('./footer.html #footer');
-  });
+  // 배너 이미지 영역
+  let timerID = null;
+  let auto = function() {
+    timerID = setInterval(function() {
+      let slideNum = $('#wrap img');
+      slideNum.each(function() {
+        if ($(this).css('opacity') == 1) {
+          $(this).animate({
+            opacity: 0
+          }, {
+            duration: 3000,
+            easing: 'swing'
+          });
+        } else {
+          $(this).animate({
+            opacity: 1
+          }, {
+            duration: 3000,
+            easing: 'swing'
+          });
+        };
+      });
+    }, 4000);
+  }
+  auto();
+
   // 카운트 영역
   let boxNum = $('.section_box .count');
   boxNum.each(function() {
@@ -12,8 +34,7 @@ $(function() {
       duration: 2000,
       easing: 'swing',
       step: function(now) {
-        $(this).text(Math.ceil(now));
-        $(this).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        $(this).text(Math.ceil(now).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ","));
       }
     });
   });
@@ -37,7 +58,7 @@ $(function() {
         });
       } else if (name == '#carousel_next' && !isAni) {
         innerElem.animate({
-          marginLeft: caInMarginLeft - widthNum*2
+          marginLeft: caInMarginLeft - widthNum * 2
         }, '1200', 'swing', function() {
           $('#wrap_circle .circle:first').appendTo(innerElem);
           innerElem.css('margin-left', -widthNum);
@@ -63,7 +84,34 @@ $(function() {
     return false;
   });
 
-
-
-
+  $(function() {
+    $('#header_wrap').load('./header.html #header');
+    $('#footer_wrap').load('./footer.html #footer');
+  });
 });
+
+// TOP 버튼
+function topFunc() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
+function readyTopFunc() {
+  $(document).ready(function() {
+    topFunc()
+  });
+};
+
+// 패밀리사이트
+function siteFunc() {
+  let ele = document.getElementsByClassName('site_up')[0];
+  ele.classList.toggle('on');
+};
+
+function readySiteFunc() {
+  $(document).ready(function() {
+    siteFunc()
+  });
+};

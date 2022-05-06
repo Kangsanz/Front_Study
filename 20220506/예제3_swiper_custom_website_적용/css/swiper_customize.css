@@ -1,0 +1,19 @@
+@charset "UTF-8";
+.thumb-button-next, .thumb-button-prev {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: red;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 500;
+  cursor: pointer;
+}
+
+.thumb-button-next {
+  left: 0;
+}
+
+.thumb-button-prev {
+  right: 0;
+}
