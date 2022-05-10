@@ -402,8 +402,140 @@ section.active .row {
   transform: translateY(0px);
 }
 
+/* footer area */
+#footer {
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+#footer .footer-top {
+  background: #111;
+  padding: 60px 0 30px;
+}
+
+#footer .container {
+  /* footer-top의 .container와 #footer의 자식요소 .container의 공통 스타일 적용 */
+  width: 1140px;
+  margin: 0 auto;
+}
+
+#footer>.container {
+  padding: 30px 0;
+  text-align: center;
+}
+
+#footer .container .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#footer .container .row .column {
+  flex: 25%;
+  padding: 0 10px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+#footer .container .row .column.footer-logo h3 {
+  font-size: 34px;
+  padding: 2px 0 2px 10px;
+  border-left: 4px solid #18d26e;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+#footer .container .row .column h4 {
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+#footer .container .row .column h4:after, #footer .container .row .column h4:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+}
+
+#footer .container .row .column h4:before {
+  width: 100%;
+  background: #555;
+}
+
+#footer .container .row .column h4:after {
+  width: 60px;
+  background: #18d26e;
+}
+
+#footer .container .row .column ul li {
+  border-bottom: 1px solid #333;
+  padding: 10px 0;
+}
+
+#footer .container .row .column ul li:nth-child(1) {
+  padding-top: 0;
+}
+
+#footer .container .row .column p {
+  line-height: 26px;
+}
+
+#footer .container .row .column.news input[type=text] {
+  border: 0;
+  padding: 6px 8px;
+  width: 65%;
+  box-sizing: border-box;
+}
+
+#footer .container .row .column.news input[type=submit] {
+  border: 0;
+  padding: 6px 0;
+  width: 35%;
+  background: #18d26e;
+  color: white;
+  cursor: pointer;
+}
+
 /* media query */
+@media screen and (max-width: 1200px) {
+  section .row .column {
+    flex: 100%;
+  }
+
+  section#ourclients .row .column, section#mytools .row .column {
+    flex: 50%;
+  }
+
+  section#myprofile .row .column .inner img {
+    width: 30%;
+  }
+
+  #footer .container {
+    width: 100%;
+  }
+
+  #footer .container .row .column {
+    flex: 50%;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  section#myprofile .row .column .inner img {
+    width: 50%;
+  }
+
+  #footer .container {
+    flex: 100%;
+  }
+
   input[type=checkbox]#gnbcheck:checked~#header #gnb {
     left: 0;
   }
@@ -431,5 +563,15 @@ section.active .row {
     width: 100%;
     padding-left: 10px;
     box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  section#myprofile .row .column .inner img {
+    width: 50%;
+  }
+
+  section#ourclients .row .column, section#mytools .row .column {
+    flex: 100%;
   }
 }

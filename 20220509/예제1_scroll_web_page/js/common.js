@@ -4,7 +4,7 @@ $(function() {
   //script 입력 영역
   $('nav ul li a,.back-to-top a,.button').click(function() {
     let thisHash = $(this.hash);
-    // 1번 여러번 클릭을 방$()
+    // 1번 여러번 클릭을 방지
     // let isAni = $('html,body').is(':animated');
     // if (!isAni) {
     //   $('html,body').animate({scrollTop : thisHash.offset().top},1500)
@@ -34,7 +34,7 @@ $(function() {
       if (thisScTop >= thisOffet.top - intervalNum && thisScTop <= thisOffet.top + wHeight) {
         $(this).addClass('active')
       } else {
-        $(this).removeClass('active')
+        // $(this).removeClass('active')
       }
     });
   });
