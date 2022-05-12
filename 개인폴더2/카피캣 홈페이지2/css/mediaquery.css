@@ -1,4 +1,223 @@
 /* media query */
-@media screen and (max-width: 1150px) {
+@media screen and (min-width: 1920px) {
+  #header .header-wrap {
+    max-width: 1920px;
+    padding: 0 160px;
+  }
 
+  #header .header-wrap .logo a {
+    height: 26px;
+  }
+
+  #header .header-wrap .logo a img {
+    height: 26px;
+  }
+
+  #header .header-wrap .navbar-collapse .service-menu .round-button {
+    height: 44px;
+    padding: 14px 28px;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 30px;
+  }
+
+  #first .banner-container {
+    width: 1600px;
+    height: 1000px;
+    margin: 0 auto;
+  }
+
+  #first .banner-container .banner-wrapper .text-wrapper {
+    padding-top: 168px;
+    padding-left: 0;
+  }
+
+  #first .banner-container .banner-wrapper .text-wrapper h1 {
+    font-size: 56px;
+    line-height: 80px;
+  }
+
+  #first .banner-container .banner-navigator {
+    height: 60px;
+    bottom: 80px;
+    left: 0;
+  }
+
+  #first .banner-container .banner-navigator .control-btn.prev {
+    width: 60px;
+    height: 60px;
+  }
+
+  #first .banner-container .banner-navigator .control-btn.next {
+    width: 60px;
+    height: 60px;
+  }
+
+  #second .slide-wrapper .slide {
+    width: 340px;
+    height: 296px;
+    margin-left: 40px;
+    padding: 40px;
+  }
+
+  #second .slide-wrapper .slide img {
+    height: 44px;
+  }
+
+  #second .slide-wrapper .slide h3 {
+    font-size: 28px;
+    line-height: 42px;
+    margin: 18px 0 0 0;
+  }
+
+  #second .slide-wrapper .slide p {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 8px 0;
+  }
+
+  #second .slide-wrapper .slide a {
+    font-size: 14px;
+    line-height: 22px;
+    bottom: 41px;
+  }
+
+  #third .illustration-slides.one .left-slides .slides-img-wrapper .slides-img-wrap .slides-img {
+    width: 600px;
+    height: 375px;
+  }
+
+  #third .illustration-slides.one .right-slides .slides-img-wrapper .slides-img-wrap .slides-img {
+    width: 240px;
+    height: 425px;
+  }
+
+  #third .illustration-slides.one .right-slides .slides-img-wrapper .slides-img-wrap .slides-img.logo {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 22px;
+  }
+
+  #third .presentation-wrapper .slides-navigator-wrapper .navigator-wrap .control-btn {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 32px;
+  }
+
+  #third .presentation-wrapper .slides-navigator-wrapper .navigator-wrap .control-btn.next {
+    margin-top: 32px;
+    margin-bottom: 0;
+  }
+
+  #third .presentation-wrapper .slides-navigator-wrapper .navigator-wrap .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+
+  #third .presentation-wrapper .slides-navigator-wrapper .navigator-wrap .dot:nth-child(6) {
+    margin-bottom: 0;
+  }
+
+  #fourth {
+    height: 992px;
+  }
+}
+
+@media screen and (min-width: 1765px) {
+  #first .banner-container .banner-wrapper .illustration-wrapper .banner-man {
+    width: 523.3px;
+    height: 955.07px;
+    right: 391px;
+    bottom: -30px;
+  }
+
+  #first .banner-container .banner-wrapper .illustration-wrapper .banner-woman {
+    width: 713.5px;
+    height: 534.82px;
+    right: 22px;
+    bottom: -8.82px;
+  }
+
+  #first .banner-container .banner-wrapper .illustration-wrapper .banner-icon.one {
+    width: 240px;
+    height: 234px;
+    right: 843px;
+    bottom: 49px;
+  }
+
+  #first .banner-container .banner-wrapper .illustration-wrapper .banner-icon.two {
+    width: 320px;
+    height: 180px;
+    bottom: 663px;
+    right: 114px;
+  }
+
+  #first .banner-container .banner-wrapper .illustration-wrapper .banner-icon.three {
+    width: 244px;
+    height: 144px;
+    right: 843px;
+    bottom: 387px;
+  }
+
+  #first .banner-container .banner-wrapper .illustration-wrapper .banner-icon.four {
+    width: 292px;
+    height: 264px;
+    bottom: 382px;
+    right: -41px;
+  }
+
+  #third .presentation-wrapper .contents-slides-wrapper {
+    padding-left: 80px;
+  }
+
+  #third .contents-slides .text-wrapper .title {
+    font-size: 44px;
+    line-height: 66px;
+  }
+
+  #third .contents-slides .text-wrapper .description {
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 0;
+  }
+
+  #third .contents-slides .text-wrapper .description span {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #first .banner-container .banner-wrapper .text-wrapper .round-button {
+    height: 60px;
+    padding: 20px 40px;
+    margin: 40px 0 0 3px;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 30px;
+  }
+}
+
+@media screen and (min-width: 1291px) {
+  #second {
+    width: 100%;
+    height: 866px;
+  }
+
+  #second .text-wrapper {
+    padding-top: 160px;
+  }
+
+  #second .text-wrapper h2 {
+    font-size: 44px;
+    line-height: 66px;
+    margin: 0;
+  }
+
+  #second .text-wrapper p {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 22px 0 0 0;
+  }
 }
