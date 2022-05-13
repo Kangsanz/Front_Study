@@ -261,17 +261,18 @@
 }
 
 #first .banner-container .banner-wrapper .text-wrapper .round-button {
-  height: 3.25vw;
+  height: 44px;
   line-height: 20px;
-  padding: 20px 35px;
-  margin: 40px 0 0 3px;
-  text-align: center;
+  font-size: 14px;
+  padding: 12px 32px;
+  margin: 26px 0 0 3px;
+  border-radius: 30px;
 }
 
 #first .banner-container .banner-wrapper .text-wrapper .round-button span {
   width: 12px;
   height: 20px;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.02em;
 }
@@ -416,7 +417,7 @@
 #third .presentation-wrapper {
   display: flex;
   position: sticky;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   top: 0;
 }
@@ -430,7 +431,7 @@
 }
 
 #third .presentation-wrapper .illustration-slides-wrapper .illustration-slides {
-  display: flex;
+  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -438,6 +439,10 @@
   align-items: flex-start;
   flex: 1;
   overflow: hidden;
+}
+
+#third .presentation-wrapper .illustration-slides-wrapper .illustration-slides.one {
+  display: flex;
 }
 
 #third .illustration-slides>div {
@@ -482,16 +487,26 @@
   height: 10.74vw;
   margin-bottom: -1.17vw;
   margin-left: 0.78vw;
+  box-shadow: none;
 }
 
 #third .presentation-wrapper .contents-slides-wrapper {
+  position: relative;
   display: flex;
   width: 620px;
   align-items: center;
   padding-left: 3.91vw;
+  background: #fff;
 }
 
-#third .presentation-wrapper .contents-slides-wrapper .contents-slides {}
+#third .presentation-wrapper .contents-slides-wrapper .contents-slides {
+  position: absolute;
+  display: none;
+}
+
+#third .presentation-wrapper .contents-slides-wrapper .contents-slides.one {
+  display: block;
+}
 
 #third .contents-slides .text-wrapper .title {
   line-height: 3.50vw;
@@ -551,6 +566,7 @@
   border: 0;
   border-radius: 100%;
   padding: 0;
+  margin-bottom: 32px;
   cursor: pointer;
 }
 
@@ -560,6 +576,7 @@
 
 #third .presentation-wrapper .slides-navigator-wrapper .navigator-wrap .control-btn.next {
   background-image: url('../img/arrow-down-icon.svg');
+  margin-bottom: 0;
 }
 
 #third .presentation-wrapper .slides-navigator-wrapper .navigator-wrap .dot {
@@ -579,16 +596,16 @@
 #fourth {
   position: relative;
   width: 100%;
-  height: 963px;
+  height: 63.48vw;
   background-color: #0A2A62;
   overflow: hidden;
 }
 
 #fourth .contents-wrapper {
   position: relative;
-  width: 1360px;
+  width: 100vw;
+  padding: 7.81vw;
   margin: 0 auto;
-  padding: 180px 0 0 0;
 }
 
 #fourth .contents-wrapper .text-wrapper {
@@ -596,12 +613,12 @@
 }
 
 #fourth .contents-wrapper .text-wrapper .title {
-  line-height: 66px;
+  line-height: 4.10vw;
+  font-size: 2.54vw;
   font-weight: 600;
-  font-size: 44px;
   letter-spacing: -0.04em;
+  margin-top: 1.95vw;
   white-space: pre-line;
-  margin: 0;
 }
 
 #fourth .contents-wrapper .text-wrapper .description {
@@ -623,10 +640,10 @@
 }
 
 #fourth .contents-wrapper .shild-img-wrap {
-  margin-top: 102px;
-  width: 250px;
-  height: 312px;
   display: block;
+  width: 11.04vw;
+  height: 13.87vw;
+  margin-top: 10.64vw;
   background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE0IiBoZWlnaHQ9IjE0MiIgdmlld0JveD0iMCAwIDExNCAxNDIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDE1Ljg2ODdMNTYuODkxIDBMMTEzLjc4MiAxNS44Njg3QzExMy43ODIgMTUuODY4NyAxMTMuNzgyIDQyLjAyNjMgMTEzLjc4MiA4My4zMDU0QzExMy43ODIgMTI0LjU4NCA1Ni44OTEgMTQyIDU2Ljg5MSAxNDJDNTYuODkxIDE0MiAwIDEyNC41ODQgMCA4My4zMDU0QzAgNDIuMDI2MyAwIDE1Ljg2ODcgMCAxNS44Njg3WiIgZmlsbD0iIzA2M0M5OCIvPgo8ZWxsaXBzZSBjeD0iNTYuODkxNCIgY3k9IjYwLjg1NzIiIHJ4PSI2LjA5NTQ3IiByeT0iNi4wODU3MSIgZmlsbD0iIzBBMkE2MiIvPgo8cGF0aCBkPSJNNTYuNjg4IDYzLjY5NzNMNjIuODQ2NyA4MS4zNDU4SDUwLjUyOTRMNTYuNjg4IDYzLjY5NzNaIiBmaWxsPSIjMEEyQTYyIi8+Cjwvc3ZnPgo=');
   background-size: cover;
   background-repeat: no-repeat;
@@ -635,28 +652,131 @@
 #fourth .contents-wrapper .card-wrapper {
   position: absolute;
   display: flex;
-  width: 1108px;
+  width: 71.88vw;
   height: 100%;
-  top: 160px;
-  right: -120px;
+  top: 9.77vw;
+  right: 7.81vw;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  overflow: hidden;
 }
 
-#fourth .contents-wrapper .card-wrapper .group .card-wrap {
+
+#fourth .group.a {
+  padding-top: 26.37vw;
+}
+
+#fourth .group.b {
+  padding-top: 29.1vw;
+}
+
+#fourth .group.c {
+  padding-top: 7.13vw;
+}
+
+#fourth .group.d {
+
+}
+
+#fourth .group.e {
+  padding-top: 2.34vw;
+}
+
+#fourth .group .card-wrap {
   display: flex;
-  width: 196px;
-  min-height: 228px;
+  width: 12.7vw;
+  min-height: 14.65vw;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 8px;
-  padding: 20px 30px 20px 20px;
+  padding: 1.76vw 1.56vw 1.37vw 1.76vw;
   background: #FFFFFF;
   box-shadow: 0px 2px 4px rgb(0 0 0 / 8%);
 }
 
+#fourth .group .card-wrap:nth-of-type(2) {
+  margin-top: 1.95vw;
+}
+
+#fourth .group .card-wrap .card-img {
+  height: 3.52vw;
+  width: 7.81vw;
+}
+
+#fourth .group.a .card-wrap .card-img {
+  background-image: url('../img/card/img-01.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#fourth .group.b .card-wrap .card-img {
+  background-image: url('../img/card/img-02.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#fourth .group.c .card-wrap .card-img {
+  background-image: url('../img/card/img-03.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#fourth .group.c .card-wrap:last-child .card-img {
+  background-image: url('../img/card/img-04.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#fourth .group.d .card-wrap .card-img {
+  background-image: url('../img/card/img-05.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#fourth .group.d .card-wrap:last-child .card-img {
+  background-image: url('../img/card/img-06.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#fourth .group.e .card-wrap .card-img {
+  background-image: url('../img/card/img-07.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#fourth .group.e .card-wrap:last-child .card-img {
+  background-image: url('../img/card/img-08.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 #fifth {
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   padding: 8.01vw 0;
-  background: #534;
   z-index: 10;
+}
+
+#fifth .text-wrapper {
+
+}
+
+#fifth .customer-grid {
+
+}
+
+#fifth .customer-grid .customer-logo {
+
+}
+
+#fifth .customer-grid .customer-logo .logo {
+  
+}
+
+#fifth .customer-grid .customer-logo .logo.bok {
+
 }
 
 #footer {
