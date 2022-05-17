@@ -662,24 +662,23 @@
   overflow: hidden;
 }
 
-
-#fourth .group.a {
+#fourth .contents-wrapper .card-wrapper .group.a {
   padding-top: 26.37vw;
 }
 
-#fourth .group.b {
+#fourth .contents-wrapper .card-wrapper .group.b {
   padding-top: 29.1vw;
 }
 
-#fourth .group.c {
+#fourth .contents-wrapper .card-wrapper .group.c {
   padding-top: 7.13vw;
 }
 
-#fourth .group.d {
-
+#fourth .contents-wrapper .card-wrapper .group.d {
+  padding-top: 0;
 }
 
-#fourth .group.e {
+#fourth .contents-wrapper .card-wrapper .group.e {
   padding-top: 2.34vw;
 }
 
@@ -752,31 +751,118 @@
   background-repeat: no-repeat;
 }
 
+#fourth .group.e .certificate-text {
+  position: absolute;
+  right: 5px;
+  line-height: 32px;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-top: 32px;
+}
+
 #fifth {
-  width: 100%;
-  height: 60vh;
-  padding: 8.01vw 0;
-  z-index: 10;
+  position: relative;
+  width: 1360px;
+  text-align: center;
+  margin: auto;
+  padding: 160px 0;
 }
 
 #fifth .text-wrapper {
+  color: #222222;
+}
 
+#fifth .text-wrapper .title {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 66px;
+  margin: 0;
+  padding: 0;
+}
+
+#fifth .text-wrapper .description {
+  font-size: 20px;
+  line-height: 32px;
+  margin: 20px 0 0 0;
+}
+
+#fifth h3 {
+  font-size: 28px;
+  line-height: 42px;
+  margin: 60px 0 0;
+}
+
+#fifth h3 .bar {
+  display: inline-block;
+  width: 1px;
+  height: 24px;
+  margin: 0 6px 3px;
+  background-color: #222;
+  vertical-align: middle;
 }
 
 #fifth .customer-grid {
-
+  display: flex;
+  width: 1368px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 20px auto 0;
 }
 
 #fifth .customer-grid .customer-logo {
-
+  display: flex;
+  width: 220px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 4px;
 }
 
 #fifth .customer-grid .customer-logo .logo {
-  
+  width: 100%;
+  height: 100%;
 }
 
-#fifth .customer-grid .customer-logo .logo.bok {
+#sixth {
+  position: relative;
+  width: 100%;
+  height: 440px;
+  text-align: center;
+  background-color: #2E6450;
+  padding-top: 150px;
+  overflow: hidden;
+}
 
+#sixth .background-change {
+  position: absolute;
+  width: 65%;
+  height: 800px;
+  top: -100px;
+  background: #6AD784;
+  z-index: -1;
+}
+
+#sixth .title {
+  line-height: 54px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  color: #222222;
+  margin: 0;
+}
+
+#sixth .round-button {
+  height: 60px;
+  line-height: 20px;
+  font-size: 20px;
+  border-width: 0px;
+  border-radius: 30px;
+  padding: 20px 40px;
+  margin: 40px 0 0 3px;
+  vertical-align: bottom;
+}
+
+#sixth .round-button span {
 }
 
 #footer {

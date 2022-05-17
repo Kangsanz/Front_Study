@@ -1,0 +1,104 @@
+// layout 공통
+$headerHeight: 60px;
+$subMenuHeight: 40px;
+$footerHeight: 80px;
+$mainMinHeight: calc( 100vh - (#{$headerHeight} + #{$footerHeight} + 52px));
+
+#wrap {
+  width: $siteWidth;
+  margin: 0 auto;
+
+  #header {
+    position: relative;
+    height: $headerHeight;
+
+    #top-logo {
+      float: left;
+
+      a {
+        height: $headerHeight;
+        line-height: $headerHeight;
+      }
+    }
+    // 메인 메뉴
+    #top-nav {
+      position: relative;
+      height: $headerHeight;
+      float: right;
+      /// #top-nav ul 표기와 동일
+      ul {
+        float: left;
+
+        li {
+          position: relative;
+          float: left;
+          margin-left: 30px;
+
+          &:first-child {
+            margin-left: 0;
+          }
+
+          a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            line-height: $headerHeight;
+          }
+
+          &:hover {
+            .sub-menu {
+              visibility: visible;
+              top: 100%;
+              opacity: 1;
+            }
+          }
+          // submenu 구현
+          .sub-menu {
+            position: absolute;
+            border: 1px solid $borderColorPrimary;
+            visibility: hidden;
+            top: calc(100% - 3px);
+            opacity: 0;
+            transition: 0.3s;
+
+            li {
+              width: 100%;
+              margin: 0;
+              background: #fff;
+              box-sizing: border-box;
+              padding: 0 10px;
+              min-width: 150px;
+              transition: 0.3s;
+
+              &:hover {
+                background: $gbtnColor;
+
+                a {
+                  color: #fff;
+                }
+              }
+
+              a {
+                height: $subMenuHeight;
+                line-height: $subMenuHeight;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    min-height: $mainMinHeight;
+  }
+
+  #footer {
+    margin-top: 50px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-top: 1px solid $borderColorPrimary;
+    color: $fontColorPrimary;
+  }
+}

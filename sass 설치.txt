@@ -1,0 +1,12 @@
+atom : scout app 종료 / 삭제
+sass-autocompile 삭제
+
+관리자 권한 cmd 열기
+1. npm cache clean -force
+2. npm init (엔터 여러번)
+3. 1번 실행
+4. cd.. (여러번 실행해서 C: 나올 때 까지) c: 1번 실행
+5. npm uninstall -g node-sass
+6. 1번 실행, npm install -g node -sass
+
+sass-autocompile 설치

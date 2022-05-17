@@ -1,0 +1,10 @@
+@charset
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

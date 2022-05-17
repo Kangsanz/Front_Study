@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+//SCSS 파일 분화
+@import "var.scss"; // 공통 변수
+@import "mixin.scss"; // 공통 mixin
+@import "initial.scss"; // CSS 초기화
+
+body {
+  width: $siteWidth;
+}
