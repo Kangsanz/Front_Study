@@ -1,0 +1,31 @@
+// common ui
+// general button
+
+.gbtn {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: $gbtnColor;
+  color: #fff;
+  border: 1px solid $gbtnColor;
+
+  &:hover {
+    color: $gbtnColor;
+    background: #fff;
+  }
+}
+
+.txt_btn {
+  display: inline-block;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #fff;
+  box-sizing: border-box;
+  background: url("../img/btn/arrow_right.png") 138px center no-repeat #000000;
+}

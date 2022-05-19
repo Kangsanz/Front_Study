@@ -1,0 +1,303 @@
+// layout 공통
+$headerHeight: 90px;
+$subMenuHeight: 70px;
+$footerHeight: 80px;
+$mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 52px));
+
+.subpage #wrap #header-wrap #header #top-nav ul:before {
+  height: 80px;
+}
+
+.subpage #wrap main {
+  margin-top: 80px;
+}
+
+#wrap {
+  width: 100%;
+  margin: 0 auto;
+
+  #header-wrap {
+    position: relative;
+    z-index: 20;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 60px;
+      left: 0;
+      top: 90px;
+      // background-color: #fff;
+      border-top: solid 1px #bdbdbd;
+      box-sizing: border-box;
+      transition: 0.2s;
+    }
+
+    #header {
+      width: $siteWidth;
+      height: $headerHeight;
+      margin: 0 auto;
+
+      #top-logo {
+        float: left;
+
+        a {
+          display: block;
+          width: 116px;
+          height: $headerHeight;
+          background-image: url("../img/logo.jpg");
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+      }
+      // 메인 메뉴
+      #top-nav {
+        // position: relative;
+        display: flex;
+        height: $headerHeight;
+        justify-content: center;
+        /// #top-nav ul 표기와 동일
+        ul {
+          float: left;
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 0;
+            left: 0;
+            top: 91px;
+            background-color: #fcfcfc;
+            transition: 0.2s;
+            z-index: 10;
+          }
+
+          &:hover:before {
+            height: 80px;
+          }
+
+          li {
+            position: relative;
+            float: left;
+            // margin-left: 30px;
+            &:first-child {
+              margin-left: 0;
+            }
+
+            a {
+              display: inline-block;
+              width: 100%;
+              height: 100%;
+              line-height: $headerHeight;
+              padding: 0 25px;
+              font-size: $fontSizeMid;
+              font-weight: 500;
+              color: #000;
+            }
+
+            &:hover {
+              .sub-menu {
+                height: 80px;
+
+                li {
+                  display: block;
+                }
+              }
+            }
+            // submenu 구현
+            .sub-menu {
+              display: flex;
+              position: absolute;
+              top: 100%;
+              height: 0;
+              transition: 0.3s;
+              z-index: 200;
+
+              &:before {
+                display: none;
+              }
+
+              li {
+                display: none;
+                width: 100%;
+                min-width: 110px;
+                padding: 0 10px;
+                margin: 0;
+                box-sizing: border-box;
+
+                &:hover {
+                  a {
+                    color: $fontColorHover;
+                  }
+                }
+
+                a {
+                  width: 100%;
+                  height: $subMenuHeight;
+                  line-height: $subMenuHeight;
+                  padding: 0;
+                  font-size: 16px;
+                  text-align: center;
+                  color: #666666;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    min-height: $mainMinHeight;
+    margin-top: 60px;
+  }
+
+  #footer {
+    width: $siteWidth;
+    margin: 0 auto;
+
+    a {
+      color: #666;
+    }
+
+    .inner {
+      width: 100%;
+      height: 165px;
+      position: relative;
+      flex-direction: column;
+      font-size: 14px;
+
+      .down_box {
+        & > ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: left;
+          text-align: left;
+
+          li {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.5;
+            margin-top: 9px;
+            padding-left: 26px;
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            background-size: 22px auto;
+          }
+        }
+      }
+    }
+
+    #sns_box {
+      position: absolute;
+      display: flex;
+      top: 0;
+      right: 0;
+      padding-top: 24px;
+
+      & > a {
+        margin-left: 12px;
+        cursor: pointer;
+      }
+
+      .sns {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 40px auto;
+        box-sizing: border-box;
+      }
+
+      a {
+        &:nth-of-type(1) .sns {
+          background-image: url("../img/footer/sns_icon1.png");
+          margin-left: 0;
+        }
+
+        &:nth-of-type(2) .sns {
+          background-image: url("../img/footer/sns_icon2.png");
+        }
+      }
+
+      .site_up {
+        z-index: 100;
+
+        .site {
+          width: 190px;
+          padding: 10px 0 9px 20px;
+          border: 1px solid #d3d3d3;
+          box-sizing: border-box;
+          text-align: left;
+          background-color: #f8f8f8;
+
+          span {
+            color: #888;
+            font-size: 14px;
+            line-height: 1.5;
+
+            &:after {
+              right: 7%;
+              content: '';
+              position: absolute;
+              top: 70%;
+              display: block;
+              width: 7px;
+              height: 7px;
+              margin-top: -3.5px;
+              border-width: 0;
+              border-style: solid;
+              border-color: #aaa;
+              transform: rotate(45deg);
+              border-top-width: 1px;
+              border-right-width: 1px;
+              transition: 0.3s;
+            }
+          }
+        }
+
+        &.on {
+          .site span:after {
+            transform: rotate(-45deg);
+          }
+
+          &+.family_site {
+            bottom: 35px;
+            opacity: 1;
+            z-index: 1;
+          }
+        }
+      }
+
+      .family_site {
+        position: absolute;
+        width: 190px;
+        right: 0;
+        bottom: 0;
+        text-align: left;
+        transition: 0.3s;
+        opacity: 0;
+        z-index: -1;
+
+        ul {
+          padding: 10px;
+          border: 1px solid #d3d3d3;
+          background-color: #f8f8f8;
+          box-sizing: border-box;
+
+          li {
+            padding: 10px;
+            line-height: 1.5;
+            height: 20px;
+
+            a {
+              color: #888;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.025em;
+  outline: none;
+}
+
+html,body, {
+  height: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  background: $layoutBg;
+  color: $fontColorBasic;
+}
+
+ul,li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $fontColorPrimary;
+  transition: .5s;
+  &:hover {
+    color: $fontColorHover;
+  }
+}
