@@ -1,14 +1,19 @@
 body.subpage {
   main {
     .container {
+      position: relative;
       display: flex;
       // 왼쪽 메뉴
       #lnb {
+        position: fixed;
+        width: 11.5%;
+        left: 10px;
         flex: 230px;
         flex-shrink: 0;
         flex-grow: 0;
         box-sizing: border-box;
         padding-right: 50px;
+        opacity: 1;
 
         ul {
           li {
@@ -43,6 +48,7 @@ body.subpage {
             margin-top: 50px;
           }
         }
+
         span {
           position: relative;
           display: inline-block;
