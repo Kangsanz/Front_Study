@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.container .col, .container-fluid .col {
+  /* background-color: blueviolet; */
+  text-align: center;
+  color: black;
+}
+
+.container-fluid .row + .row {
+  margin-top: 10px;
+}
+
+.col .table + .btn {
+  float: right;
+}
+
+.row:last-child .col {
+  background-color: lightblue;
+}
+
+.col.text {
+  padding: 30px;
+}
+
+.col.text + .col-auto.img-box {
+  padding-top: 20px;
+}
+
+.col.text + .col-md-6.img-box {
+  padding-top: 0;
+}
+
+.col.img-box {
+  /* background-image: url('../img/thumb_nail01.jpg'); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: transparent;
+}

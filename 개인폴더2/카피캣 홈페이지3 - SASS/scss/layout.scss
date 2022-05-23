@@ -73,7 +73,7 @@ $mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 52px));
           li {
             position: relative;
             float: left;
-            // margin-left: 30px;
+
             &:first-child {
               margin-left: 0;
             }
@@ -87,6 +87,26 @@ $mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 52px));
               font-size: $fontSizeMid;
               font-weight: 500;
               color: #000;
+            }
+
+            .top-menu {
+              position: relative;
+              width: auto;
+
+              &:hover {
+                color: $borderColorPrimary;
+
+                &:after {
+                  content: '';
+                  position: absolute;
+                  width: 60%;
+                  height: 3px;
+                  bottom: 0;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  background: $borderColorPrimary;
+                }
+              }
             }
 
             &:hover {
