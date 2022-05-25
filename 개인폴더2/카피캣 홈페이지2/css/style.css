@@ -834,36 +834,53 @@
 }
 
 #sixth .background-change {
-  position: absolute;
-  width: 65%;
-  height: 800px;
-  top: -100px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
   background: #6AD784;
-  z-index: -1;
+  z-index: 2;
+}
+
+#sixth .background-change:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-top: 800px solid #6AD784;
+  border-right: 800px solid transparent;
+}
+
+#sixth .text-wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
 }
 
 #sixth .title {
   line-height: 54px;
+  margin: 0;
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
   color: #222222;
-  margin: 0;
 }
 
 #sixth .round-button {
   height: 60px;
   line-height: 20px;
-  font-size: 20px;
-  border-width: 0px;
-  border-radius: 30px;
   padding: 20px 40px;
   margin: 40px 0 0 3px;
+  border-width: 0px;
+  border-radius: 30px;
+  font-size: 20px;
   vertical-align: bottom;
 }
 
-#sixth .round-button span {
-}
+#sixth .round-button span {}
 
 #footer {
   width: 100%;

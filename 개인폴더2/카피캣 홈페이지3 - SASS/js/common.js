@@ -34,7 +34,7 @@ $(function() {
   });
 
   // 로드 영역
-  if (hrefFunc(location) == 'index') {
+  if (hrefFunc(location) == 'index' || hrefFunc(location) == '') {
     $('#footer-wrap').load('footer.html #footer');
     $('#header-wrap').load('header.html #header');
   } else {
@@ -42,5 +42,5 @@ $(function() {
     $('#header-wrap').load('../header2.html #header');
   }
 
-  
+
 });
