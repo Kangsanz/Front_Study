@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>vue lifecycle</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>{{ message }}</h1>
+    <p>{{ nowDate }}</p>
+    {{ changeText }}
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    let app = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue.js!!!',
+        nowDate: '2022.05.26',
+        changeText: 'hi vue!!!'
+      },
+      beforeCreate: function() {
+        console.log('beforeCreate!!!');
+        console.log(this.changeText);
+      },
+      created: function() {
+        console.log('created!!!');
+        console.log(this.changeText);
+      },
+      mounted: function() {
+        console.log('mounted!!!');
+        this.changeText = 'i am vue.js!!'
+        console.log(this.changeText);
+      },
+      updated: function() {
+        console.log('updated!!!');
+        console.log(this.changeText);
+      }
+    });
+  </script>
+</body>
+
+</html>

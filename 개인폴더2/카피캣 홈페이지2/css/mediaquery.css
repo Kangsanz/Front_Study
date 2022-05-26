@@ -24,16 +24,16 @@
 
 @media screen and (min-width: 1400px) {
   #first .banner-container .banner-wrapper .text-wrapper .round-button {
-    height: 50px;
+    height: 60px;
+    padding: 20px 40px;
+    margin: 40px 0 0 3px;
+    font-size: 20px;
     line-height: 20px;
-    font-size: 16px;
-    padding: 16px 36px;
-    margin: 20px 0 0 0;
     border-radius: 30px;
   }
 
   #first .banner-container .banner-wrapper .text-wrapper .round-button span {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 20px;
   }
 }
@@ -328,4 +328,21 @@
     margin: 0 auto;
     padding: 180px 0 0 0;
   }
-}
+
+  #fourth .contents-wrapper .text-wrapper .description {
+    margin: 32px 0 0 0;
+    line-height: 32px;
+    font-size: 20px;
+  }
+
+  #fourth .contents-wrapper .shild-img-wrap {
+    width: 250px;
+    height: 312px;
+    margin-top: 102px;
+  }
+
+  #fourth .contents-wrapper .card-wrapper {
+    width: 1108px;
+    right: -120px;
+    top: 160px;
+  }

@@ -1,0 +1,35 @@
+1. 기술적 구성
+ - css
+ - scss
+ - javasript
+ - jquery(javascript library)
+   https://animejs.com/documentation/#cssProperties
+   https://michalsnik.github.io/aos/
+ - bootstrap
+ - 프레임워크(framework)
+
+2. UI 형태별 구성
+ - 고정형 레이아웃 : 레이아웃이 틀어지거나 오류가 발생하면 X
+ - 반응형 레이아웃 : fluid, mediaquery, css 속성(flex,grid)
+ - 모바일 전용 레이아웃
+
+3. 컨텐츠별 구성
+ - 관공서
+ - 게임회사 : 랜딩페이지
+ - 쇼핑몰 (E-commerce)
+ - 교육 컨텐츠 (영상 관련 컨텐츠) : video.js
+ - 회사 소개
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+추가 참고
+
+1. 관공서 (관청) - 시청, 노동청, 국세청... 3개(금욜까지 서칭)
+2. 대학교 3개
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+작업팁
+1. 작업 우선 순위를 정해라.
+2. 쉬운 작업 1순위 : 레이아웃, CSS
+3. 페이지 내 컨텐츠가 많을 경우 순차적 업데이트
+4. 어려운 작업 후 순위 작업
+5. 작업 페이지 완성도 높여라
