@@ -419,12 +419,12 @@
   display: flex;
   position: relative;
   width: 100%;
-  height: 7835px;
+  height: 500vh;
 }
 
 #third .presentation-wrapper {
   display: flex;
-  position: sticky;
+  /* position: sticky; */
   width: 100%;
   height: 100vh;
   top: 0;
@@ -432,6 +432,7 @@
 
 #third .presentation-wrapper .illustration-slides-wrapper {
   display: flex;
+  flex-direction: column;
   position: relative;
   width: 56.25vw;
   height: 100vh;
@@ -439,7 +440,7 @@
 }
 
 #third .presentation-wrapper .illustration-slides-wrapper .illustration-slides {
-  display: none;
+  display: flex;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -449,9 +450,24 @@
   overflow: hidden;
 }
 
-#third .presentation-wrapper .illustration-slides-wrapper .illustration-slides.one {
-  display: flex;
+/* #third .presentation-wrapper .illustration-slides-wrapper .illustration-slides.one {
 }
+
+#third .presentation-wrapper .illustration-slides-wrapper .illustration-slides.two {
+  top: 100vh;
+}
+
+#third .presentation-wrapper .illustration-slides-wrapper .illustration-slides.three {
+  top: 200vh;
+}
+
+#third .presentation-wrapper .illustration-slides-wrapper .illustration-slides.four {
+  top: 300vh;
+}
+
+#third .presentation-wrapper .illustration-slides-wrapper .illustration-slides.five {
+  top: 400vh;
+} */
 
 #third .illustration-slides>div {
   display: flex;
@@ -512,11 +528,41 @@
 
 #third .presentation-wrapper .contents-slides-wrapper .contents-slides {
   position: absolute;
-  display: none;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-right: 115px;
+  justify-content: left;
+  align-items: center;
+  background: #fff;
 }
 
 #third .presentation-wrapper .contents-slides-wrapper .contents-slides.one {
-  display: block;
+  z-index: 10
+}
+
+#third .presentation-wrapper .contents-slides-wrapper .contents-slides.two {
+  top: 100vh;
+  z-index: 8
+}
+
+#third .presentation-wrapper .contents-slides-wrapper .contents-slides.three {
+  top: 200vh;
+  z-index: 6
+}
+
+#third .presentation-wrapper .contents-slides-wrapper .contents-slides.four {
+  top: 300vh;
+  z-index: 4
+}
+
+#third .presentation-wrapper .contents-slides-wrapper .contents-slides.five {
+  top: 400vh;
+  z-index: 2
+}
+
+#third .contents-slides .text-wrapper {
+  width: 100%;
 }
 
 #third .contents-slides .text-wrapper .title {
@@ -531,9 +577,10 @@
 }
 
 #third .contents-slides .text-wrapper .description {
+  width: 100%;
+  margin: 32px 0 0 0;
   font-size: 20px;
   line-height: 32px;
-  margin: 32px 0 0 0;
   white-space: pre-line;
   word-break: keep-all;
 }
