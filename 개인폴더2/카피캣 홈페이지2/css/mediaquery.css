@@ -282,17 +282,17 @@
     bottom: 41px;
   }
 
-  #third .illustration-slides.one .left-slides .slides-img-wrapper .slides-img-wrap .slides-img {
+  #third .illustration-slides .left-slides .slides-img-wrapper .slides-img-wrap .slides-img {
     width: 600px;
     height: 375px;
   }
 
-  #third .illustration-slides.one .right-slides .slides-img-wrapper .slides-img-wrap .slides-img {
+  #third .illustration-slides .right-slides .slides-img-wrapper .slides-img-wrap .slides-img {
     width: 240px;
     height: 425px;
   }
 
-  #third .illustration-slides.one .right-slides .slides-img-wrapper .slides-img-wrap .slides-img.logo {
+  #third .illustration-slides .right-slides .slides-img-wrapper .slides-img-wrap .slides-img.logo {
     width: 220px;
     height: 220px;
     margin-bottom: 22px;
