@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@keyframes slideAni {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-380px * 10));
+  }
+}
+
 /* 공통 클래스 */
 .flex_wrap {
   display: flex;
@@ -389,8 +399,9 @@
   margin: 1.95vw 0 0 0;
 }
 
-#container #second .slide-wrapper {
+#second .slide-wrapper {
   width: 500%;
+  height: 35%;
   margin-top: 3.91vw;
 }
 
@@ -400,10 +411,18 @@
   float: left;
   width: 260px;
   height: 226px;
-  margin-left: 26px;
   padding: 30px;
+  margin-left: 26px;
   background: #fff;
-  vertical-align: middle;
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 8%);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s;
+  animation: slideAni 30s linear infinite;
+}
+
+#second .slide-wrapper .slide:hover {
+  box-shadow: -8px 8px 26px 0px rgba(0, 0, 0, 0.15);
 }
 
 #second .slide-wrapper .slide img {
@@ -673,6 +692,8 @@
 
 #third .presentation-wrapper .slides-navigator-wrapper .navigator-wrap .control-btn.prev {
   background-image: url('../img/arrow-up-icon.svg');
+  opacity: 0.3;
+  cursor: auto;
 }
 
 #third .presentation-wrapper .slides-navigator-wrapper .navigator-wrap .control-btn.next {
@@ -686,6 +707,12 @@
   border-radius: 0.39vw;
   margin-bottom: 1.76vw;
   background: #E5E5E5;
+  cursor: pointer;
+}
+
+#third .presentation-wrapper .slides-navigator-wrapper .navigator-wrap .dot.active {
+  background: #222222;
+  cursor: auto;
 }
 
 #third .scroll-wrapper {
