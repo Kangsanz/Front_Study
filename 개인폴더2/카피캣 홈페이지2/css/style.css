@@ -10,6 +10,35 @@
   }
 }
 
+@keyframes slide3Ani {
+  0% {
+    transform: rotate(-30deg);
+    right: 3px;
+  }
+
+  100% {
+    transform: rotate(30deg);
+    right: -303px;
+  }
+}
+
+@keyframes slide3Ani2 {
+  0% {
+    transform: translateY(0);
+    right: 363px;
+  }
+
+  50% {
+    transform: translateY(96px);
+    right: 350px;
+  }
+
+  100% {
+    transform: translateY(0);
+    right: 337px;
+  }
+}
+
 /* 공통 클래스 */
 .flex_wrap {
   display: flex;
@@ -181,6 +210,7 @@
   height: 64vw;
   min-height: 685px;
   max-height: 1000px;
+  overflow: hidden;
 }
 
 #first .banner-container {
@@ -204,7 +234,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: 2s;
+  transition: 1s;
 }
 
 #first .banner-container .banner-wrapper .banner-wrap.one {
@@ -219,7 +249,7 @@
   opacity: 0;
 }
 
-#first .banner-container .banner-wrapper .illustration-wrapper {
+#first .banner-container .banner-wrapper .banner-wrap .illustration-wrapper {
   display: flex;
   position: absolute;
   width: 100%;
@@ -229,54 +259,218 @@
   justify-content: flex-end;
 }
 
-#first .banner-container .banner-wrapper .illustration-wrapper img {
+#first .banner-container .banner-wrapper .banner-wrap .illustration-wrapper img {
   position: absolute;
 }
 
-#first .banner-container .banner-wrapper .illustration-wrapper .banner-man {
-  width: 29.39vw;
-  height: 53.71vw;
-  right: 27.08vw;
-  bottom: -2.34vw;
+/* 첫번째 배너 슬라이드 */
+#first .banner-container .banner-wrapper .banner-wrap.one .illustration-wrapper .banner-man {
+  width: 523.3px;
+  height: 955.07px;
+  right: 391px;
+  bottom: -30px;
   z-index: -2;
 }
 
-#first .banner-container .banner-wrapper .illustration-wrapper .banner-woman {
-  width: 40.23vw;
-  height: 30.18vw;
-  right: 6.28vw;
-  bottom: -0.88vw;
+#first .banner-container .banner-wrapper .banner-wrap.one .illustration-wrapper .banner-woman {
+  width: 713.5px;
+  height: 534.82px;
+  right: 22px;
+  bottom: -8.82px;
   z-index: -1;
 }
 
-#first .banner-container .banner-wrapper .illustration-wrapper .banner-icon.one {
-  width: 11.13vw;
-  height: 10.55vw;
-  right: 41.63vw;
-  bottom: 44.04vw;
+#first .banner-container .banner-wrapper .banner-wrap.one .illustration-wrapper .banner-icon.one {
+  width: 240px;
+  height: 234px;
+  right: 843px;
+  bottom: 49px;
 }
 
-#first .banner-container .banner-wrapper .illustration-wrapper .banner-icon.two {
+#first .banner-container .banner-wrapper .banner-wrap.one .illustration-wrapper .banner-icon.two {
+  width: 320px;
+  height: 180px;
+  bottom: 663px;
+  right: 114px;
+  box-shadow: -10px 12px 40px 0px #0000001a, -10px 50px 60px 0px #0000001a;
+}
+
+#first .banner-container .banner-wrapper .banner-wrap.one .illustration-wrapper .banner-icon.three {
+  width: 244px;
+  height: 144px;
+  right: 843px;
+  bottom: 387px;
+  box-shadow: -10px 12px 40px 0px #0000001a, -10px 50px 60px 0px #0000001a;
+}
+
+#first .banner-container .banner-wrapper .banner-wrap.one .illustration-wrapper .banner-icon.four {
+  width: 292px;
+  height: 264px;
+  bottom: 382px;
+  right: -41px;
+}
+
+/* 두번째 배너 슬라이드 */
+#first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper {
+  top: 99px;
+}
+
+#first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-man {
+  width: 13.28vw;
+  height: 13.28vw;
+  top: 21.87vw;
+  left: 43.55vw;
+}
+
+#first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-man2 {
   width: 14.65vw;
-  height: 8.3vw;
-  right: 13.99vw;
-  bottom: 46.19vw;
-  box-shadow: -10px 12px 40px 0px #0000001a, -10px 50px 60px 0px #0000001a;
+  height: 14.65vw;
+  top: 34.86vw;
+  left: 69.73vw;
 }
 
-#first .banner-container .banner-wrapper .illustration-wrapper .banner-icon.three {
-  width: 11.13vw;
-  height: 6.64vw;
-  right: 51.69vw;
-  bottom: 22.05vw;
-  box-shadow: -10px 12px 40px 0px #0000001a, -10px 50px 60px 0px #0000001a;
+#first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-woman {
+  width: 13.28vw;
+  height: 13.28vw;
+  top: 0;
+  left: 55.57vw;
+  z-index: -1;
 }
 
-#first .banner-container .banner-wrapper .illustration-wrapper .banner-icon.four {
-  width: 14.84vw;
-  height: 12.11vw;
-  right: 5.2vw;
-  bottom: 30.47vw;
+#first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-icon.one {
+  width: 16.31vw;
+  height: 16.31vw;
+  top: 1.17vw;
+  left: 60.55vw;
+}
+
+#first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-icon.two {
+  width: 23.83vw;
+  height: 16.99vw;
+  top: 4.98vw;
+  left: 72.5vw;
+}
+
+#first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-icon.three {
+  width: 29.98vw;
+  height: 20.51vw;
+  top: 25.68vw;
+  left: 46vw;
+}
+
+#first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-icon.four {
+  width: 15.23vw;
+  height: 15.23vw;
+  top: 22.95vw;
+  left: 77.64vw;
+}
+
+#first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-icon.five {
+  width: 10.74vw;
+  height: 5.37vw;
+  top: 39.65vw;
+  left: 58.98vw;
+}
+
+#first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .screen-wrapper {
+  position: absolute;
+  width: 36.91vw;
+  height: 22.95vw;
+  top: 13.18vw;
+  left: 51.86vw;
+  z-index: 10;
+}
+
+#first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .screen-wrapper .screen {
+  position: absolute;
+  width: 36.91vw;
+  height: 22.95vw;
+  background-size: cover;
+}
+
+#first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .screen-wrapper .card.a {
+  width: 36.91vw;
+  background-size: 36.91vw;
+  background-image: url('../img/banner/slide2/screen-card-1.svg');
+}
+
+#first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .screen-wrapper .card.b {}
+
+#first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .screen-wrapper .card.c {}
+
+/* 세번째 배너 슬라이드 */
+#first .banner-wrap.three .illustration-wrapper .swing-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 536px;
+  bottom: 74px;
+}
+
+#first .banner-wrap.three .illustration-wrapper .swing-wrapper .semicircle-wrapper {
+  position: absolute;
+  width: 690px;
+  height: 690px;
+  right: 48px;
+  bottom: 0;
+  animation: slide3Ani 5s 3s ease-in-out alternate infinite;
+}
+
+#first .banner-wrap.three .illustration-wrapper .swing-wrapper .semicircle-wrapper .semicircle {
+  width: 685px;
+  height: 340px;
+  margin-top: 345px;
+  border-bottom-left-radius: 690px;
+  border-bottom-right-radius: 690px;
+  background-color: #4899F8;
+}
+
+#first .banner-wrap.three .illustration-wrapper .swing-wrapper .circle {
+  position: absolute;
+  display: flex;
+  width: 104px;
+  height: 104px;
+  right: 212px;
+  top: 5px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #6AD784;
+  animation: slide3Ani2 5s 3s cubic-bezier(0.39, 0, 0.59, 0.98) alternate infinite;
+}
+
+#first .banner-container .banner-wrapper .banner-wrap.three .illustration-wrapper .banner-man {
+  width: 180px;
+  height: 358px;
+  right: 105px;
+  bottom: 117px;
+}
+
+#first .banner-container .banner-wrapper .banner-wrap.three .illustration-wrapper .banner-man2 {
+  width: 342px;
+  height: 305px;
+  right: 75px;
+  bottom: 116px;
+}
+
+#first .banner-container .banner-wrapper .banner-wrap.three .illustration-wrapper .banner-woman {
+  width: 147px;
+  height: 402px;
+  right: 355px;
+  bottom: 113px;
+}
+
+#first .banner-container .banner-wrapper .banner-wrap.three .illustration-wrapper .banner-icon.one {
+  width: 124px;
+  height: 134px;
+  right: 487px;
+  bottom: 443px;
+}
+
+#first .banner-container .banner-wrapper .banner-wrap.three .illustration-wrapper .banner-icon.two {
+  width: 124px;
+  height: 134px;
+  bottom: 486px;
+  right: 400px;
 }
 
 #first .banner-container .banner-wrapper .text-wrapper {
@@ -321,6 +515,10 @@
   margin: -3px 7px 0 0;
   vertical-align: middle;
   background: url('../img/banner/fast-icon.png') no-repeat 0 0/cover;
+}
+
+#first .banner-container .banner-wrapper .banner-wrap.two .text-wrapper .round-button span:before {
+  display: none;
 }
 
 #first .banner-container .banner-navigator {

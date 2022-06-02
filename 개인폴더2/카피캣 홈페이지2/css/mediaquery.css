@@ -137,50 +137,51 @@
 }
 
 @media screen and (min-width: 1765px) {
-  #first .banner-container .banner-wrapper .illustration-wrapper .banner-man {
+  #third .presentation-wrapper .contents-slides-wrapper {
+    padding-left: 80px;
+  }
+
+  /* 첫번째 배너 슬라이드 */
+  #first .banner-container .banner-wrapper .banner-wrap.one .illustration-wrapper .banner-man {
     width: 523.3px;
     height: 955.07px;
     right: 391px;
     bottom: -30px;
   }
 
-  #first .banner-container .banner-wrapper .illustration-wrapper .banner-woman {
+  #first .banner-container .banner-wrapper .banner-wrap.one .illustration-wrapper .banner-woman {
     width: 713.5px;
     height: 534.82px;
     right: 22px;
     bottom: -8.82px;
   }
 
-  #first .banner-container .banner-wrapper .illustration-wrapper .banner-icon.one {
+  #first .banner-container .banner-wrapper .banner-wrap.one .illustration-wrapper .banner-icon.one {
     width: 240px;
     height: 234px;
     right: 843px;
     bottom: 49px;
   }
 
-  #first .banner-container .banner-wrapper .illustration-wrapper .banner-icon.two {
+  #first .banner-container .banner-wrapper .banner-wrap.one .illustration-wrapper .banner-icon.two {
     width: 320px;
     height: 180px;
     bottom: 663px;
     right: 114px;
   }
 
-  #first .banner-container .banner-wrapper .illustration-wrapper .banner-icon.three {
+  #first .banner-container .banner-wrapper .banner-wrap.one .illustration-wrapper .banner-icon.three {
     width: 244px;
     height: 144px;
     right: 843px;
     bottom: 387px;
   }
 
-  #first .banner-container .banner-wrapper .illustration-wrapper .banner-icon.four {
+  #first .banner-container .banner-wrapper .banner-wrap.one .illustration-wrapper .banner-icon.four {
     width: 292px;
     height: 264px;
     bottom: 382px;
     right: -41px;
-  }
-
-  #third .presentation-wrapper .contents-slides-wrapper {
-    padding-left: 80px;
   }
 
   #third .contents-slides .text-wrapper .title {
@@ -225,6 +226,131 @@
     width: 1600px;
     height: 1000px;
     margin: 0 auto;
+  }
+
+  /* 두번째 배너 슬라이드 */
+  #first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper {
+    top: 0;
+  }
+
+  #first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-man {
+    width: 280px;
+    height: 280px;
+    top: 416px;
+    left: 644px;
+  }
+
+  #first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-man2 {
+    width: 280px;
+    height: 280px;
+    top: 696px;
+    left: 1171px;
+  }
+
+  #first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-woman {
+    width: 232px;
+    height: 232px;
+    top: 28px;
+    left: 884px;
+  }
+
+  #first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-icon.one {
+    width: 360px;
+    height: 360px;
+    top: 20px;
+    left: 928px;
+  }
+
+  #first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-icon.two {
+    top: 98px;
+    left: 1236px;
+    width: 448px;
+    height: 378px;
+  }
+
+  #first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-icon.three {
+    width: 557px;
+    height: 460px;
+    top: 473px;
+    left: 739px;
+  }
+
+  #first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-icon.four {
+    top: 464px;
+    left: 1380px;
+  }
+
+  #first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-icon.five {
+    width: 240px;
+    height: 120px;
+    top: 831px;
+    left: 931px;
+  }
+
+  /* 세번째 배너 슬라이드 */
+  #first .banner-wrap.three .illustration-wrapper .swing-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+  }
+
+  #first .banner-wrap.three .illustration-wrapper .swing-wrapper .semicircle-wrapper {
+    width: 1200px;
+    height: 1200px;
+    bottom: 36px;
+    right: 3px;
+  }
+
+  #first .banner-wrap.three .illustration-wrapper .swing-wrapper .semicircle-wrapper .semicircle {
+    width: 1195px;
+    height: 595px;
+    margin-top: 602px;
+    border-bottom-left-radius: 1200px;
+    border-bottom-right-radius: 1200px;
+  }
+
+  #first .banner-wrap.three .illustration-wrapper .swing-wrapper .circle {
+    width: 200px;
+    height: 200px;
+    top: 70px;
+    right: 362px;
+    margin-bottom: 730px;
+  }
+
+  #first .banner-container .banner-wrapper .banner-wrap.three .illustration-wrapper .banner-man {
+    width: 299px;
+    height: 590px;
+    right: 138px;
+    bottom: 93px;
+  }
+
+  #first .banner-container .banner-wrapper .banner-wrap.three .illustration-wrapper .banner-man2 {
+    width: 565px;
+    height: 503px;
+    right: 92px;
+    bottom: 90px;
+  }
+
+  #first .banner-container .banner-wrapper .banner-wrap.three .illustration-wrapper .banner-woman {
+    width: 221px;
+    height: 656px;
+    right: 569px;
+    bottom: 62px;
+  }
+
+  #first .banner-container .banner-wrapper .banner-wrap.three .illustration-wrapper .banner-icon.one {
+    width: 240px;
+    height: 258px;
+    right: 827px;
+    bottom: 579px;
+  }
+
+  #first .banner-container .banner-wrapper .banner-wrap.three .illustration-wrapper .banner-icon.two {
+    width: 240px;
+    height: 258px;
+    bottom: 665px;
+    right: 660px;
   }
 
   #first .banner-container .banner-wrapper .text-wrapper {
@@ -310,7 +436,8 @@
 
   #third .presentation-wrapper .slides-navigator-wrapper .navigator-wrap .dot {
     width: 8px;
-    border-radius: 8px;
+    height: 8px;
+    border-radius: 100%;
     margin-bottom: 24px;
   }
 

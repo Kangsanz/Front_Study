@@ -45,51 +45,79 @@ $(function() {
   // 세번째 섹션
   let nowHeight = $(this).scrollTop();
   let headerHeight = $('#header').innerHeight() + $('#first').innerHeight() + $('#second').innerHeight();
-  let sectionHeight = $('.illustration-slides').innerHeight();
+  let sectionHeight = $('.illustration-slides-wrapper').innerHeight();
   let funcHeight = headerHeight + sectionHeight
+  let isPrevOpacity = $('.navigator-wrap .control-btn.prev').css('opacity');
+  let isNextOpacity = $('.navigator-wrap .control-btn.next').css('opacity');
 
   $('.navigator-wrap .control-btn.prev').click(function() {
-    if ($('.dot.one').hasClass('active')) {
-      $('.dot').removeClass('active');
-      $('.dot.five').addClass('active');
-    } else {
-      $('.dot.active').removeClass('active').prev().addClass('active');
+    if ($('.dot.active').hasClass('two')) {
+      $('html').stop().animate({
+        scrollTop: headerHeight + 20
+      }, 400);
+      console.log('two');
+    } else if ($('.dot.active').hasClass('three')) {
+      $('html').stop().animate({
+        scrollTop: funcHeight + 20
+      }, 400);
+      console.log('three');
+    } else if ($('.dot.active').hasClass('four')) {
+      $('html').stop().animate({
+        scrollTop: funcHeight + sectionHeight + 20
+      }, 400);
+      console.log('four');
+    } else if ($('.dot.active').hasClass('five')) {
+      $('html').stop().animate({
+        scrollTop: funcHeight + sectionHeight * 2 + 20
+      }, 400);
+      console.log('five');
     }
   });
 
   $('.navigator-wrap .control-btn.next').click(function() {
-    if ($('.dot.five').hasClass('active')) {
-      $('.dot').removeClass('active');
-      $('.dot.one').addClass('active');
+    if ($('.dot.active').hasClass('one')) {
+      $('html').stop().animate({
+        scrollTop: funcHeight + 20
+      }, 400);
+      console.log('one');
+    } else if ($('.dot.active').hasClass('two')) {
+      $('html').stop().animate({
+        scrollTop: funcHeight + sectionHeight + 20
+      }, 400);
+      console.log('two');
+    } else if ($('.dot.active').hasClass('three')) {
+      $('html').stop().animate({
+        scrollTop: funcHeight + sectionHeight * 2 + 20
+      }, 400);
+      console.log('three');
+    } else if ($('.dot.active').hasClass('four')) {
+      $('html').stop().animate({
+        scrollTop: funcHeight + sectionHeight * 3 + 20
+      }, 400);
+      console.log('four');
     }
   });
 
   $('.dot').click(function() {
-    $('.dot').removeClass('active');
     if ($(this).hasClass('one')) {
-      $(this).addClass('active');
       $('html').stop().animate({
-        scrollTop: headerHeight
+        scrollTop: headerHeight + 20
       }, 400);
     } else if ($(this).hasClass('two')) {
-      $(this).addClass('active');
       $('html').stop().animate({
-        scrollTop: funcHeight
+        scrollTop: funcHeight + 20
       }, 400);
     } else if ($(this).hasClass('three')) {
-      $(this).addClass('active');
       $('html').stop().animate({
-        scrollTop: funcHeight + sectionHeight
+        scrollTop: funcHeight + sectionHeight + 20
       }, 400);
     } else if ($(this).hasClass('four')) {
-      $(this).addClass('active');
       $('html').stop().animate({
-        scrollTop: funcHeight + sectionHeight * 2
+        scrollTop: funcHeight + sectionHeight * 2 + 20
       }, 400);
     } else if ($(this).hasClass('five')) {
-      $(this).addClass('active');
       $('html').stop().animate({
-        scrollTop: funcHeight + sectionHeight * 3
+        scrollTop: funcHeight + sectionHeight * 3 + 20
       }, 400);
     }
   })
@@ -97,7 +125,7 @@ $(function() {
   $(window).scroll(function() {
     let nowHeight = $(this).scrollTop();
     let headerHeight = $('#header').innerHeight() + $('#first').innerHeight() + $('#second').innerHeight();
-    let sectionHeight = $('.illustration-slides').innerHeight();
+    let sectionHeight = $('.illustration-slides-wrapper').innerHeight();
     let funcHeight = headerHeight + sectionHeight
     if (nowHeight >= funcHeight) {
       $('.navigator-wrap .control-btn.prev').css({
