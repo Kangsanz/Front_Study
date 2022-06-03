@@ -1,52 +1,13 @@
 @charset "UTF-8";
 
-@keyframes slideAni {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(calc(-380px * 10));
-  }
-}
-
-@keyframes slide3Ani {
-  0% {
-    transform: rotate(-30deg);
-    right: 3px;
-  }
-
-  100% {
-    transform: rotate(30deg);
-    right: -303px;
-  }
-}
-
-@keyframes slide3Ani2 {
-  0% {
-    transform: translateY(0);
-    right: 363px;
-  }
-
-  50% {
-    transform: translateY(96px);
-    right: 350px;
-  }
-
-  100% {
-    transform: translateY(0);
-    right: 337px;
-  }
-}
-
 /* 공통 클래스 */
-.flex_wrap {
+.flex-wrap {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.flex_nav_wrap {
+.flex-nav-wrap {
   display: flex;
   height: 100%;
   padding: 0 16px;
@@ -118,6 +79,7 @@
 
 #header .header-wrap .navbar-collapse .nav-wrap {
   flex: 1;
+  height: 100%;
 }
 
 #header .header-wrap .navbar-collapse .nav-wrap nav {
@@ -140,16 +102,22 @@
   height: 100%;
 }
 
-#header .header-wrap .navbar-collapse .nav-wrap nav ul li:first-child a:after {
+#header .header-wrap .navbar-collapse .nav-wrap nav ul li .flex-nav-wrap.service:after {
   content: '';
   width: 8px;
   height: 4px;
   margin-left: 8px;
   background: url('../img/header/arrow-down-icon.svg') no-repeat 50% 50%/100%;
   background-size: cover;
+  transition: 0.5s;
+  transition-property: transform;
 }
 
-#header .header-wrap .navbar-collapse .nav-wrap nav ul li:last-child a:before {
+#header .header-wrap .navbar-collapse .nav-wrap nav ul li .flex-nav-wrap.service.on:after {
+  transform: rotate(180deg);
+}
+
+#header .header-wrap .navbar-collapse .nav-wrap nav ul li:last-child .flex-nav-wrap:before {
   content: '';
   display: inline-block;
   width: 16px;
@@ -158,7 +126,97 @@
   background: url('../img/header/guide-icon.svg') no-repeat 50% 50%/100%;
 }
 
-#header .header-wrap .navbar-collapse .langChange {}
+#header .header-wrap .navbar-collapse .nav-wrap nav>ul li .flex-nav-wrap:hover span, #header .flex-nav-wrap.service.on span {
+  position: relative;
+  font-weight: bold;
+}
+
+#header .header-wrap .navbar-collapse .nav-wrap nav>ul li .flex-nav-wrap:hover span:after, #header .flex-nav-wrap.service.on span:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #222;
+}
+
+#header .header-wrap .navbar-collapse .nav-wrap .service-list {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  width: 403px;
+  height: auto;
+  top: 100%;
+  left: -20px;
+  padding: 12px 20px;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  background: #FFFFFF;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: -8px 12px 32px rgb(0 0 0 / 24%);
+}
+
+#header .flex-nav-wrap.service.on+.service-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+#header .header-wrap .navbar-collapse .nav-wrap .service-list li {
+  width: 180px;
+  height: 48px;
+  margin: 12px 0;
+  overflow: hidden;
+}
+
+#header .header-wrap .navbar-collapse .nav-wrap .service-list li a {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 100%;
+  padding-right: 32px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #222;
+  transition: 0.5s;
+  transition-property: background-color, font-weight;
+}
+
+#header .header-wrap .navbar-collapse .nav-wrap .service-list li a:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 16px;
+  right: 8px;
+  opacity: 0;
+  background: url('../img/header/service/right_arrow.svg') no-repeat 50% 50%/100%;
+  transition: 0.5s;
+  transition-property: opacity, transform;
+  transform: translate3d(-5px, 0, 0);
+}
+
+#header .header-wrap .navbar-collapse .nav-wrap .service-list li a:hover {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+#header .header-wrap .navbar-collapse .nav-wrap .service-list li a:hover:after {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+#header .header-wrap .navbar-collapse .nav-wrap .service-list li a>i {
+  width: 32px;
+  height: 32px;
+  margin: 8px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
+}
 
 #header .header-wrap .navbar-collapse .langChange .langSelecBtn {
   width: 24px;
@@ -285,6 +343,7 @@
   height: 234px;
   right: 843px;
   bottom: 49px;
+  animation: slide1Ani1 6s .2s alternate-reverse linear infinite;
 }
 
 #first .banner-container .banner-wrapper .banner-wrap.one .illustration-wrapper .banner-icon.two {
@@ -293,6 +352,7 @@
   bottom: 663px;
   right: 114px;
   box-shadow: -10px 12px 40px 0px #0000001a, -10px 50px 60px 0px #0000001a;
+  animation: slide1Ani2 4s linear infinite;
 }
 
 #first .banner-container .banner-wrapper .banner-wrap.one .illustration-wrapper .banner-icon.three {
@@ -301,6 +361,7 @@
   right: 843px;
   bottom: 387px;
   box-shadow: -10px 12px 40px 0px #0000001a, -10px 50px 60px 0px #0000001a;
+  animation: slide1Ani3 8s linear infinite;
 }
 
 #first .banner-container .banner-wrapper .banner-wrap.one .illustration-wrapper .banner-icon.four {
@@ -308,6 +369,7 @@
   height: 264px;
   bottom: 382px;
   right: -41px;
+  animation: slide1Ani4 6s linear infinite;
 }
 
 /* 두번째 배너 슬라이드 */
@@ -320,6 +382,7 @@
   height: 13.28vw;
   top: 21.87vw;
   left: 43.55vw;
+  animation: slide2Ani 6s linear infinite;
 }
 
 #first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-man2 {
@@ -327,6 +390,8 @@
   height: 14.65vw;
   top: 34.86vw;
   left: 69.73vw;
+  animation: slide2Ani 6s linear infinite;
+  animation-delay: 1s;
 }
 
 #first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-woman {
@@ -335,6 +400,7 @@
   top: 0;
   left: 55.57vw;
   z-index: -1;
+  animation: slide2Ani 6s linear infinite;
 }
 
 #first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .banner-icon.one {
@@ -464,6 +530,7 @@
   height: 134px;
   right: 487px;
   bottom: 443px;
+  animation: slide3Ani3 10s linear infinite;
 }
 
 #first .banner-container .banner-wrapper .banner-wrap.three .illustration-wrapper .banner-icon.two {
@@ -471,6 +538,7 @@
   height: 134px;
   bottom: 486px;
   right: 400px;
+  animation: slide3Ani3 13s linear infinite;
 }
 
 #first .banner-container .banner-wrapper .text-wrapper {

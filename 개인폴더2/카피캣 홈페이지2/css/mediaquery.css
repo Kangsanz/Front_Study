@@ -287,6 +287,22 @@
     left: 931px;
   }
 
+  #first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .screen-wrapper {
+    width: 760px;
+    height: 475px;
+    top: 260px;
+    left: 820px;
+  }
+
+  #first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .screen-wrapper .card.a {
+    background-size: cover;
+    background-image: url('../img/banner/slide2/screen-card-1.svg');
+  }
+
+  #first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .screen-wrapper .card.b {}
+
+  #first .banner-container .banner-wrapper .banner-wrap.two .illustration-wrapper .screen-wrapper .card.c {}
+
   /* 세번째 배너 슬라이드 */
   #first .banner-wrap.three .illustration-wrapper .swing-wrapper {
     position: absolute;

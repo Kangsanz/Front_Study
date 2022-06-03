@@ -1,6 +1,21 @@
 $(function() {
+  // 헤더 섹션
+  $('.service-list li a').each(function() {
+    let thisData = $(this).attr('data');
+    $(this).find('i').css('background-image',`url('img/header/service/${thisData}.svg')`)
+  })
+
+  $('.flex-nav-wrap.service').click(function() {
+    $(this).toggleClass('on');
+  })
+
   // 첫번째 섹션
-  let isAni = $(this).is(":animated")
+  if ($('.banner-wrap').hasClass('active')) {
+    $(this).find('div').css('animation-play-state', 'paused');
+  } else {
+    $(this).find('div').css('animation-play-state', 'running');
+  }
+
   $('.banner-navigator .control-btn.next').click(function() {
     if ($('.banner-wrap.three').hasClass('active')) {
       $('.banner-wrap.active').removeClass('active').css('opacity', '0');
