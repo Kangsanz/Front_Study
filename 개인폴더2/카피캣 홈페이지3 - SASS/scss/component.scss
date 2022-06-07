@@ -14,21 +14,19 @@
     align-items: center;
     justify-content: space-around;
 
-    &.main {
-      .title {
-        position: relative;
-        font-size: $titleFontSizeBig;
+    .title {
+      position: relative;
+      font-size: $titleFontSizeBig;
 
-        &:before {
-          content: '';
-          position: absolute;
-          left: 368px;
-          top: 89px;
-          display: inline-block;
-          width: 180px;
-          height: 2px;
-          background-color: #000000;
-        }
+      &:before {
+        content: '';
+        position: absolute;
+        left: 368px;
+        top: 89px;
+        display: inline-block;
+        width: 180px;
+        height: 2px;
+        background-color: #000000;
       }
     }
 
