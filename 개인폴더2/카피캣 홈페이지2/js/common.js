@@ -2,7 +2,7 @@ $(function() {
   // 헤더 섹션
   $('.service-list li a').each(function() {
     let thisData = $(this).attr('data');
-    $(this).find('i').css('background-image',`url('img/header/service/${thisData}.svg')`)
+    $(this).find('i').css('background-image', `url('img/header/service/${thisData}.svg')`)
   })
 
   $('.flex-nav-wrap.service').click(function() {
@@ -10,11 +10,13 @@ $(function() {
   })
 
   // 첫번째 섹션
-  if ($('.banner-wrap').hasClass('active')) {
-    $(this).find('div').css('animation-play-state', 'paused');
-  } else {
-    $(this).find('div').css('animation-play-state', 'running');
-  }
+  // $('.banner-wrap').each(function() {
+  //   if ($(this).hasClass('active')) {
+  //     $(this).css('animation-play-state', 'running');
+  //   } else {
+  //     $(this).css('animation-play-state', 'paused');
+  //   }
+  // })
 
   $('.banner-navigator .control-btn.next').click(function() {
     if ($('.banner-wrap.three').hasClass('active')) {
@@ -70,22 +72,18 @@ $(function() {
       $('html').stop().animate({
         scrollTop: headerHeight + 20
       }, 400);
-      console.log('two');
     } else if ($('.dot.active').hasClass('three')) {
       $('html').stop().animate({
         scrollTop: funcHeight + 20
       }, 400);
-      console.log('three');
     } else if ($('.dot.active').hasClass('four')) {
       $('html').stop().animate({
         scrollTop: funcHeight + sectionHeight + 20
       }, 400);
-      console.log('four');
     } else if ($('.dot.active').hasClass('five')) {
       $('html').stop().animate({
         scrollTop: funcHeight + sectionHeight * 2 + 20
       }, 400);
-      console.log('five');
     }
   });
 
@@ -94,22 +92,18 @@ $(function() {
       $('html').stop().animate({
         scrollTop: funcHeight + 20
       }, 400);
-      console.log('one');
     } else if ($('.dot.active').hasClass('two')) {
       $('html').stop().animate({
         scrollTop: funcHeight + sectionHeight + 20
       }, 400);
-      console.log('two');
     } else if ($('.dot.active').hasClass('three')) {
       $('html').stop().animate({
         scrollTop: funcHeight + sectionHeight * 2 + 20
       }, 400);
-      console.log('three');
     } else if ($('.dot.active').hasClass('four')) {
       $('html').stop().animate({
         scrollTop: funcHeight + sectionHeight * 3 + 20
       }, 400);
-      console.log('four');
     }
   });
 
