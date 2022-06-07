@@ -17,4 +17,104 @@
   .inner {
     margin-top: 0;
   }
+
+  .swiper.mySwiper {
+    .swiper-wrapper {
+      .swiper-slide {
+        .box.items_2 {
+          .txt_wrap {
+            display: inline-block;
+            position: absolute;
+            left: 270px;
+            top: 420px;
+
+            .txt_btn {
+              width: 125px;
+              height: auto;
+              padding: 0;
+              font-size: 14px;
+              line-height: 35px;
+              color: #3f3f3f;
+              background-image: url("../img/btn/arrow1.png");
+              background-repeat: no-repeat;
+              background-position: right 0;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+
+    .swiper-pagination {
+      display: flex;
+      width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      justify-content: center;
+
+      .swiper-pagination-bullet {
+        flex: 20;
+        height: 1px;
+        margin-bottom: 100px;
+        border-radius: 0;
+        background: #fff;
+        opacity: 1;
+
+        .bullet_text {
+          display: block;
+          flex: 20;
+          padding-top: 28px;
+          line-height: 20px;
+          font-size: 20px;
+          font-weight: 500;
+          text-align: left;
+          color: #fff;
+          transition: all 0.3s ease-out;
+        }
+      }
+
+      .swiper-pagination-bullet-active {
+        height: 2px;
+        background: #000;
+
+        .bullet_text {
+          color: #000;
+        }
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: auto;
+      height: auto;
+      top: 0;
+      bottom: 0;
+      color: transparent;
+
+      &:after {
+        width: 37px;
+        height: 71px;
+      }
+    }
+
+    .swiper-button-prev {
+      left: 150px;
+
+      &:after {
+        background-image: url("../img/btn/arrow2_prev.png");
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+
+    .swiper-button-next {
+      right: 150px;
+
+      &:after {
+        background-image: url("../img/btn/arrow2_next.png");
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+  }
 }
