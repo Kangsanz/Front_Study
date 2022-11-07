@@ -13,5 +13,5 @@
 > - Jquery
 > - Bootstrap
 
-# 3. 주요 상세 페이지
-![image](https://user-images.githubusercontent.com/86581955/200260301-5aacd785-50e1-44a2-9dc1-b8974ee5f2cb.png)
+# 3. 주요 작업물
+![image](https://user-images.githubusercontent.com/86581955/200260711-bc601a50-785d-447f-bfdd-2c0cc62485e7.png)
