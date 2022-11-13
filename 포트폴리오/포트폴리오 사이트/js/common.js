@@ -45,7 +45,7 @@ $(function() {
 
   // modal 영역
   $(".modal-open").click(function() {
-    $("#"+$(this).attr("data-name")+"").css('display', 'flex').hide().fadeIn();
+    $("#" + $(this).attr("data-name") + "").css('display', 'flex').hide().fadeIn();
     //팝업을 flex속성으로 바꿔준 후 hide()로 숨기고 다시 fadeIn()으로 효과
   });
 
@@ -58,7 +58,7 @@ $(function() {
   });
 
   function modalClose(name) {
-    $("#"+name+"").fadeOut(); //페이드아웃 효과
+    $("#" + name + "").fadeOut(); //페이드아웃 효과
   }
 
   $(".img_hover img").hover(function() {
