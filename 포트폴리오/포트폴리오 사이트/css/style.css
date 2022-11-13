@@ -535,7 +535,7 @@ section.project_section .row .column .inner p:last-child {
 section.project_section .row .column .inner .line::after {
   display: inline-block;
   content: "";
-  width: calc(100% - 100px);
+  width: calc(100% - 91px);
   height: 2px;
   margin-bottom: 4px;
   text-shadow: none;
@@ -630,7 +630,7 @@ section#modal {
 
 .popup {
   width: 100%;
-  max-width: 600px;
+  max-width: 1000px;
   border-radius: 10px;
   overflow: hidden;
   background-color: #47B5FF;
@@ -683,6 +683,12 @@ section#modal {
   color: #ffffff;
   cursor: pointer;
   box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.pop-btn:hover {
+  background-color: #f1f1f1;
+  color: #47B5FF;
 }
 
 .pop-btn.confirm {
