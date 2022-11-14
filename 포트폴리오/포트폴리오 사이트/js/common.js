@@ -3,6 +3,8 @@ $(function() {
   const intervalNum = 150;
   //script 입력 영역
   $('nav ul li a,.back-to-top a,.button').click(function() {
+    $('input[type=checkbox]#gnbcheck').prop("checked", false);
+
     let thisHash = $(this.hash);
     // 1번 여러번 클릭을 방지
     // let isAni = $('html,body').is(':animated');
