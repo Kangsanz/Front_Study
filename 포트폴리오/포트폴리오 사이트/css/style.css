@@ -484,7 +484,8 @@ section#mytools .row .column h3 {
 
 section#mytools .row .column .inner {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: 1fr;
   justify-items: center;
 }
 
@@ -497,7 +498,21 @@ section#mytools .row .column:nth-child(4) .inner, section#archiving .row .column
 section#mytools .row .column .inner .img_wrap, section#archiving .row .column .inner .img_wrap {
   display: flex;
   align-items: center;
-  width: 125px;
+  width: 150px;
+  height: 125px;
+}
+
+section#mytools .row .column:nth-child(2) .inner .img_wrap {
+  display: flex;
+  align-items: center;
+  width: 175px;
+  height: 125px;
+}
+
+section#mytools .row .column:nth-child(4) .inner .img_wrap {
+  display: flex;
+  align-items: center;
+  width: 100px;
   height: 125px;
 }
 
@@ -823,9 +838,9 @@ section#modal {
     flex: 100%;
   }
 
-  section#archiving .row .column, section#mytools .row .column {
+  /* section#archiving .row .column, section#mytools .row .column {
     flex: 50%;
-  }
+  } */
 
   section#myprofile .row .column .inner img {
     width: 30%;
@@ -918,8 +933,8 @@ section#modal {
     }
 
     section#mytools .row .column .inner .img_wrap, section#archiving .row .column .inner .img_wrap {
-      width: 90px;
-      height: 90px;
+      width: 125px;
+      height: 125px;
     }
 
     @media screen and (max-width: 380px) {
