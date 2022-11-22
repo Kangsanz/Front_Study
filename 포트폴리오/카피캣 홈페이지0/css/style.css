@@ -406,3 +406,10 @@ margin-top: 30px;
   line-height: 20px;
   color: #333;
 }
+
+@media screen and (max-width: 1000px) {
+  
+  #container {
+    width: var(--content-width);
+  }
+}

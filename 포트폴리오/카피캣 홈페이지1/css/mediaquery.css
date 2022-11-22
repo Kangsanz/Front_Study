@@ -4,6 +4,10 @@
     width: 100%;
   }
 
+  #wrap #header {
+    width: auto;
+  }
+
   #header, #container {
     overflow: hidden;
   }
