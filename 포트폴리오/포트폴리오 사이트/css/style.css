@@ -303,6 +303,11 @@ section .row>h2:after {
   justify-content: center;
 }
 
+.progressbar .items-wrap .text_wrap.no-flex {
+  display: block;
+  padding: 15px 0 15px 0;
+}
+
 .progressbar .items {
   overflow: hidden;
   box-sizing: border-box;
