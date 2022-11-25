@@ -594,6 +594,10 @@ section.project_section .row .column .inner .line.con::after {
   width: calc(100% - 98px);
 }
 
+section.project_section .row .column .inner .line.sum::after {
+  width: calc(100% - 77px);
+}
+
 section.project_section .row .column .inner .img_hover {
   position: relative;
   width: 100%;
