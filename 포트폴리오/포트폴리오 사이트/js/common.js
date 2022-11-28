@@ -67,6 +67,4 @@ $(function() {
     $(this).parent().toggleClass("hovered");
   });
 
-
-
 });

@@ -545,8 +545,12 @@ section#mytools .row .column .inner .img_wrap, section#archiving .row .column .i
   height: 125px;
 }
 
-section#mytools .row .column:nth-child(4) .inner .img_wrap {
+section#mytools .row .column:nth-child(4) .inner .img_wrap:first-child {
   width: 100px;
+}
+
+section#mytools .row .column:nth-child(4) .inner .img_wrap:last-child {
+  width: 140px;
 }
 
 section#mytools .row .column .inner .img_wrap img, section#archiving .row .column .inner .img_wrap img {
@@ -634,8 +638,19 @@ section.project_section .row .column .inner .img_hover.hovered img {
 }
 
 section#front_project .row .column .inner.none-type {
-  min-height: 480px;
+  min-height: 530px;
   background-color: #fff;
+}
+
+section#front_project .row .column .inner.none-type .p_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 170px;
+}
+
+section#front_project .row .column .inner.none-type .p_box p {
+  margin: 0;
 }
 
 section#back_project .row .column .inner.none-type {
@@ -874,6 +889,12 @@ section#modal {
 }
 
 /* media query */
+@media screen and (max-width: 1400px) {
+  section#front_project .row .column .inner.none-type .p_box p:first-child {
+    margin-bottom: 16px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .progressbar .items-wrap .content-wrap {
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
@@ -881,6 +902,10 @@ section#modal {
 
   .progressbar .items-wrap .content-wrap:last-child {
     border-bottom: none;
+  }
+
+  section#front_project .row .column .inner.none-type {
+    min-height: 480px;
   }
 
   section .row .column {
@@ -893,6 +918,14 @@ section#modal {
 
   section#myskill .row .column .items-wrap:last-child {
     flex-direction: column;
+  }
+
+  section#front_project .row .column .inner.none-type .p_box {
+    height: auto;
+  }
+
+  section#front_project .row .column .inner.none-type .p_box p:first-child {
+    margin-bottom: 16px;
   }
 
   #footer .container {
@@ -985,6 +1018,14 @@ section#modal {
   section#mytools .row .column .inner .img_wrap, section#archiving .row .column .inner .img_wrap {
     width: 125px;
     height: 125px;
+  }
+
+  section#mytools .row .column:nth-child(4) .inner .img_wrap:first-child {
+    width: 90px;
+  }
+
+  section#mytools .row .column:nth-child(4) .inner .img_wrap:last-child {
+    width: 110px;
   }
 }
 
