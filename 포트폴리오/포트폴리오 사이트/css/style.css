@@ -945,7 +945,7 @@ section#modal {
 
 @media screen and (max-width: 767px) {
   .progressbar .items {
-    width: 200px;
+    width: 230px;
   }
 
   section#myprofile .row .column .inner img {
